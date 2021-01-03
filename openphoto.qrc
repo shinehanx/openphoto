@@ -4,5 +4,6 @@
         <file>rc/style/stylesheet.qss</file>
         <file>rc/images/ctrlbar/EllipseSel.png</file>
         <file>rc/images/ctrlbar/split.png</file>
+        <file>rc/images/ctrlbar/psi-crop-2.png</file>
     </qresource>
 </RCC>

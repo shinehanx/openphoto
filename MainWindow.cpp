@@ -58,7 +58,7 @@ void MainWindow::createToolbars()
 
 void MainWindow::createSplitters()
 {
-    mainSplitter = new DrawToolsPanel(Qt::Horizontal, this);
+    mainSplitter = new DrawToolPanel(this);
     qDebug() << "width:" << size().width() << ",height:" << size().height();
 
     mainSplitter->show();

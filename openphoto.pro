@@ -19,11 +19,11 @@ SOURCES += \
     main.cpp \
     MainWindow.cpp \
     openphoto.cpp \
-    ui/DrawToolsPanel.cpp
+    ui/DrawToolPanel.cpp
 
 HEADERS += \
     MainWindow.h \
-    ui/DrawToolsPanel.h
+    ui/DrawToolPanel.h
 
 FORMS += \
     MainWindow.ui
