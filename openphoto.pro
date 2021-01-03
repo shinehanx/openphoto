@@ -18,10 +18,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     main.cpp \
     MainWindow.cpp \
-    openphoto.cpp
+    openphoto.cpp \
+    ui/DrawToolsPanel.cpp
 
 HEADERS += \
-    MainWindow.h
+    MainWindow.h \
+    ui/DrawToolsPanel.h
 
 FORMS += \
     MainWindow.ui
