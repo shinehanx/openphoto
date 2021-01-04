@@ -11,6 +11,10 @@ DrawToolPanel::DrawToolPanel(Qt::Orientation orientation, QWidget * parent) : QS
     init();
 }
 
+/**
+ * @brief DrawToolPanel::init
+ * 初始化
+ */
 void DrawToolPanel::init()
 {
     QSize parentSize = ((QWidget*)parent())->size();
@@ -18,7 +22,7 @@ void DrawToolPanel::init()
 
     ctrlBarHeader = new QLabel(this);
     ctrlBarHeader->setFixedSize(48,12);
-    ctrlBarHeader->setStyleSheet("background-color:#383838;border-top: 2px solid #434343;border-right: 2px solid #434343;border-bottom: 2px solid 434343;");
+    ctrlBarHeader->setStyleSheet("background-color:#383838;border-top: 1px solid #434343;border-right: 2px solid #434343;border-bottom: 2px solid 434343;");
     ctrlBarHeaderSplit = new QLabel(this);
     ctrlBarHeaderSplit->setFixedSize(48,2);
     ctrlBarHeaderSplit->setStyleSheet("background-color:#262827;border:0px;margin-top:0px");
@@ -40,24 +44,35 @@ void DrawToolPanel::init()
     //controlToolbar->addWidget(selectBtn);
 
     for (int i=0; i < DRAW_TOOLBUTTON_NUMS; i++) {
-        QToolButton * btn = new QToolButton(this);
-        btn->setIcon(QIcon(toolbarIcons[i]));
-        btn->setToolTip(toolbarTips[i]);
-        btn->setProperty("name", toolbarNames[i]);
-        controlToolbar->addWidget(btn);
-        connect(btn, SIGNAL(triggered(QAction *)), this, SLOT(onTrigger(QAction * act)));
-        toolButtons.append(btn);
+        if (toolbarNames[i] != "-") {
+            QAction * act = new QAction(this);
+
+            act->setIcon(QIcon(toolbarIcons[i]));
+            act->setToolTip(toolbarTips[i]);
+            act->setData(toolbarNames[i]);
+            controlToolbar->addAction(act);
+            connect(act, SIGNAL(triggered(bool)), this, SLOT(onTrigger(bool)));
+            toolButtons.append(act);
+        }else {
+            QLabel * split = new QLabel(this);
+            split->setFixedSize(46,3);
+            split->setStyleSheet(qssBtnSplit);
+            controlToolbar->addWidget(split);
+        }
     }
 
     setStyleSheet(qssSplit);
-    insertWidget(0,controlToolbar);
+
+    //放置到第0位置，即是左边的工具栏
+    insertWidget(0, controlToolbar);
 }
 
 
-void DrawToolPanel::onTrigger(QAction * act)
+void DrawToolPanel::onTrigger(bool checked)
 {
-    QToolButton * btn = (QToolButton *)sender();
-    qDebug()<< "onTrigger, sender:" <<  btn->property("name").toString();
+    Q_UNUSED(checked);
+    QAction * act = (QAction *)sender();
+    qDebug()<< "onTrigger, sender:" <<  act->data().toString();
 
-    //emit triggerDrawToolButton(act->data().toString());
+    emit triggerDrawToolButton(act->data().toString());
 }

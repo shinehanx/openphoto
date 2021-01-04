@@ -1,5 +1,5 @@
-#ifndef DRAWTOOLSPANEL_H
-#define DRAWTOOLSPANEL_H
+#ifndef DRAWTOOLPANEL_H
+#define DRAWTOOLPANEL_H
 
 #include <QWidget>
 #include <QSplitter>
@@ -8,9 +8,10 @@
 #include <QToolButton>
 #include <QSet>
 
-#define DRAW_TOOLBUTTON_NUMS 3
+#define DRAW_TOOLBUTTON_NUMS 7
 class DrawToolPanel : public QSplitter
 {
+    Q_OBJECT
 private:
     const QString qssCtrlBar = "QToolBar { background-color:#525252;\
               spacing: 0px;\
@@ -34,6 +35,9 @@ private:
             background-repeat:no-repeat;\
             width: 1px;}";
 
+    //工具栏的分离线
+    const QString qssBtnSplit = "border-bottom: 1px solid #434343;background-color:#434343;border:0px;margin-top:2px";
+
     //控制工具栏
     QToolBar *controlToolbar = nullptr;
     QLabel * ctrlBarHeader = nullptr;
@@ -43,25 +47,37 @@ private:
     QString toolbarIcons[DRAW_TOOLBUTTON_NUMS] {
         ":/rc/images/toolbar/move.png",
         ":/rc/images/ctrlbar/EllipseSel.png",
-        ":/rc/images/ctrlbar/psi-crop-2.png"
+        ":/rc/images/ctrlbar/lariat.png",
+        ":/rc/images/ctrlbar/pen.png",
+        ":/rc/images/ctrlbar/psi-crop-2.png",
+        ":/rc/images/ctrlbar/pipette.png",
+        "-"
     };
 
     //工具栏命名
     QString toolbarNames[DRAW_TOOLBUTTON_NUMS] {
         "Move",
         "Select",
-        "Cut"
+        "Lariat",
+        "Pen",
+        "Crop",
+        "Pipette",
+        "-"
     };
 
     //工具栏提示
     QString toolbarTips[DRAW_TOOLBUTTON_NUMS] {
         "移动",
-        "选择",
-        "裁剪"
+        "选择工具",
+        "套索工具",
+        "画笔工具",
+        "裁剪工具",
+        "吸管工具",
+        "-"
     };
 
 
-    QVector<QToolButton *> toolButtons ;
+    QVector<QAction *> toolButtons ;
 private:
     //初始化UI
     void init();
@@ -69,14 +85,14 @@ private:
 protected:
 
 public:
-    DrawToolPanel(QWidget * parent=nullptr);
-    DrawToolPanel(Qt::Orientation, QWidget * parent=nullptr);
+    explicit DrawToolPanel(QWidget * parent=nullptr);
+    explicit DrawToolPanel(Qt::Orientation, QWidget * parent=nullptr);
 signals:
     //点击工具栏按钮：信号
     void triggerDrawToolButton(QString);
 public slots:
     //点击工具栏按钮：槽
-    void onTrigger(QAction * act);
+    void onTrigger(bool);
 };
 
-#endif // DRAWTOOLSPANEL_H
+#endif // DRAWTOOLPANEL_H

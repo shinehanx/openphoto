@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QRect desktopRect = QApplication::desktop()->availableGeometry();
+    QRect desktopRect = QApplication::desktop()->availableGeometry(-1);
     this->setGeometry(desktopRect);
     this->setStyleSheet("background-color:#262827;");
 
