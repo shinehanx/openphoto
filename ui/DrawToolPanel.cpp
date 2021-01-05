@@ -55,7 +55,7 @@ void DrawToolPanel::init()
             toolButtons.append(act);
         }else {
             QLabel * split = new QLabel(this);
-            split->setFixedSize(46,3);
+            split->setFixedSize(46,5);
             split->setStyleSheet(qssBtnSplit);
             controlToolbar->addWidget(split);
         }

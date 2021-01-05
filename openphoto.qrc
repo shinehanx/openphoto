@@ -5,8 +5,12 @@
         <file>rc/images/ctrlbar/EllipseSel.png</file>
         <file>rc/images/ctrlbar/split.png</file>
         <file>rc/images/ctrlbar/psi-crop-2.png</file>
-        <file>rc/images/ctrlbar/pen.png</file>
+        <file>rc/images/ctrlbar/brush.png</file>
         <file>rc/images/ctrlbar/lariat.png</file>
         <file>rc/images/ctrlbar/pipette.png</file>
+        <file>rc/images/ctrlbar/grid.png</file>
+        <file>rc/images/ctrlbar/painting-board.png</file>
+        <file>rc/images/ctrlbar/stamp.png</file>
+        <file>rc/images/ctrlbar/rubber.png</file>
     </qresource>
 </RCC>

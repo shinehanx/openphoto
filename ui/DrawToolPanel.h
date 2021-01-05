@@ -8,7 +8,7 @@
 #include <QToolButton>
 #include <QSet>
 
-#define DRAW_TOOLBUTTON_NUMS 7
+#define DRAW_TOOLBUTTON_NUMS 11
 class DrawToolPanel : public QSplitter
 {
     Q_OBJECT
@@ -36,7 +36,7 @@ private:
             width: 1px;}";
 
     //工具栏的分离线
-    const QString qssBtnSplit = "border-bottom: 1px solid #434343;background-color:#434343;border:0px;margin-top:2px";
+    const QString qssBtnSplit = "border-bottom: 1px solid #434343;background-color:#434343;border:0px;margin-top:2px;margin-bottom:2px";
 
     //控制工具栏
     QToolBar *controlToolbar = nullptr;
@@ -48,10 +48,14 @@ private:
         ":/rc/images/toolbar/move.png",
         ":/rc/images/ctrlbar/EllipseSel.png",
         ":/rc/images/ctrlbar/lariat.png",
-        ":/rc/images/ctrlbar/pen.png",
+        ":/rc/images/ctrlbar/painting-board.png",
         ":/rc/images/ctrlbar/psi-crop-2.png",
         ":/rc/images/ctrlbar/pipette.png",
-        "-"
+        "-",
+        ":/rc/images/ctrlbar/grid.png",
+        ":/rc/images/ctrlbar/brush.png",
+        ":/rc/images/ctrlbar/stamp.png",
+        ":/rc/images/ctrlbar/rubber.png"
     };
 
     //工具栏命名
@@ -59,10 +63,14 @@ private:
         "Move",
         "Select",
         "Lariat",
-        "Pen",
+        "Painting-board",
         "Crop",
         "Pipette",
-        "-"
+        "-",
+        "Grid",
+        "Brush",
+        "Stamp",
+        "Rubber"
     };
 
     //工具栏提示
@@ -70,10 +78,14 @@ private:
         "移动",
         "选择工具",
         "套索工具",
-        "画笔工具",
+        "画板工具",
         "裁剪工具",
         "吸管工具",
-        "-"
+        "-",
+        "网格工具",
+        "画笔工具",
+        "印章工具",
+        "橡皮擦工具"
     };
 
 
