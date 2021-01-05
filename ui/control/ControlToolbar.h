@@ -1,19 +1,21 @@
-#ifndef DRAWTOOLPANEL_H
-#define DRAWTOOLPANEL_H
+#ifndef CONTROLTOOLBAR_H
+#define CONTROLTOOLBAR_H
 
-#include <QWidget>
-#include <QSplitter>
 #include <QToolBar>
 #include <QLabel>
+#include <QVector>
+#include <QAction>
 #include <QToolButton>
-#include <QSet>
 
+//工具栏的按钮数量（包含分割栏，不包含头部）
 #define DRAW_TOOLBUTTON_NUMS 11
-class DrawToolPanel : public QSplitter
+
+class ControlToolbar : public QToolBar
 {
     Q_OBJECT
 private:
-    const QString qssCtrlBar = "QToolBar { background-color:#525252;\
+    //toolbar qss
+    const QString qssToolBar = "QToolBar { background-color:#525252;\
               spacing: 0px;\
               margin-top:2px;\
               border: 2px solid #525252;\
@@ -28,20 +30,10 @@ private:
               background-color:#3e3e3e;\
             }";
 
-    const QString qssSplit = "QSplitter::handle:horizontal {\
-            margin-left:1px solid #262827;\
-            margin-right:1px solid #262827;\
-            background-color:#3f3f3f;\
-            background-repeat:no-repeat;\
-            width: 1px;}";
-
-    //工具栏的分离线
-    const QString qssBtnSplit = "border-bottom: 1px solid #434343;background-color:#434343;border:0px;margin-top:2px;margin-bottom:2px";
-
-    //控制工具栏
-    QToolBar *controlToolbar = nullptr;
-    QLabel * ctrlBarHeader = nullptr;
-    QLabel * ctrlBarHeaderSplit = nullptr;
+    //头部qss
+    const QString qssHeader = "background-color:#383838;border-top: 1px solid #434343;border-right: 2px solid #434343;border-bottom: 2px solid 434343;";
+    //头部
+    QLabel * header = nullptr;
 
     //工具栏图标
     QString toolbarIcons[DRAW_TOOLBUTTON_NUMS] {
@@ -90,21 +82,20 @@ private:
 
 
     QVector<QAction *> toolButtons ;
-private:
-    //初始化UI
-    void init();
 
-protected:
+    //初始化UI
+    void initUi();
 
 public:
-    explicit DrawToolPanel(QWidget * parent=nullptr);
-    explicit DrawToolPanel(Qt::Orientation, QWidget * parent=nullptr);
+    explicit ControlToolbar(QWidget *parent = nullptr);
+
 signals:
     //点击工具栏按钮：信号
     void triggerDrawToolButton(QString);
+
 public slots:
     //点击工具栏按钮：槽
     void onTrigger(bool);
 };
 
-#endif // DRAWTOOLPANEL_H
+#endif // CONTROLTOOLBAR_H

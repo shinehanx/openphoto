@@ -19,11 +19,13 @@ SOURCES += \
     main.cpp \
     MainWindow.cpp \
     openphoto.cpp \
-    ui/DrawToolPanel.cpp
+    ui/MainFrameSplitter.cpp \
+    ui/control/ControlToolbar.cpp
 
 HEADERS += \
     MainWindow.h \
-    ui/DrawToolPanel.h
+    ui/MainFrameSplitter.h \
+    ui/control/ControlToolbar.h
 
 FORMS += \
     MainWindow.ui

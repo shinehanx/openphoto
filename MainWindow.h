@@ -6,7 +6,7 @@
 #include <QToolButton>
 #include <QSplitter>
 #include <QLabel>
-#include "ui/DrawToolPanel.h"
+#include "ui/MainFrameSplitter.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -46,7 +46,7 @@ private:
     QAction * moveAct = nullptr;
     QToolButton *moveBtn = nullptr;
 
-    DrawToolPanel *mainSplitter = nullptr;
+    MainFrameSplitter *mainSplitter = nullptr;
     QSplitter *rightSplitter = nullptr;
 
     void createActions();
