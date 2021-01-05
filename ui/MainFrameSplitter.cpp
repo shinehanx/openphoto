@@ -24,6 +24,10 @@ void MainFrameSplitter::init()
     setHandleWidth(5);
     setStretchFactor(0,1);
 
+    ctrlBarHeaderSplit = new QLabel(this);
+    ctrlBarHeaderSplit->setFixedSize(72,2);
+    ctrlBarHeaderSplit->setStyleSheet("background-color:#262827;border:0px;margin-top:0px");
+
     controlToolbar = new ControlToolbar(this);
     setStyleSheet(qssSplit);
 

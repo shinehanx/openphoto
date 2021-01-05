@@ -5,10 +5,12 @@
 ControlToolbar::ControlToolbar(QWidget *parent) : QToolBar(tr("控制栏"),parent)
 {
     initUi();
-
-
 }
 
+/**
+ * @brief ControlToolbar::initUi
+ * 初始化UI
+ */
 void ControlToolbar::initUi()
 {
     setOrientation(Qt::Vertical); //垂直摆放
@@ -26,13 +28,13 @@ void ControlToolbar::initUi()
     addSeparator();
 
     for (int i=0; i < DRAW_TOOLBUTTON_NUMS; i++) {
-        if (toolbarNames[i] != "-") {
+        if (toolButtonDatas[i].name != "-") {
             //按钮
             QAction * act = new QAction(this);
 
-            act->setIcon(QIcon(toolbarIcons[i]));
-            act->setToolTip(toolbarTips[i]);
-            act->setData(toolbarNames[i]);
+            act->setIcon(QIcon(toolButtonDatas[i].icon));
+            act->setToolTip(toolButtonDatas[i].tip);
+            act->setData(toolButtonDatas[i].name);
             addAction(act);
             connect(act, SIGNAL(triggered(bool)), this, SLOT(onTrigger(bool)));
             toolButtons.append(act);
@@ -43,6 +45,11 @@ void ControlToolbar::initUi()
     }
 }
 
+/**
+ * @brief ControlToolbar::onTrigger
+ * 点击按钮
+ * @param checked 是否选中
+ */
 void ControlToolbar::onTrigger(bool checked)
 {
     Q_UNUSED(checked);

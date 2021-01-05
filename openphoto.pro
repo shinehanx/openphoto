@@ -18,12 +18,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     main.cpp \
     MainWindow.cpp \
+    model/UiModel.cpp \
     openphoto.cpp \
     ui/MainFrameSplitter.cpp \
     ui/control/ControlToolbar.cpp
 
 HEADERS += \
     MainWindow.h \
+    model/UiModel.h \
     ui/MainFrameSplitter.h \
     ui/control/ControlToolbar.h
 
