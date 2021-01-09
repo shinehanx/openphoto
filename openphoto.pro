@@ -21,13 +21,25 @@ SOURCES += \
     model/UiModel.cpp \
     openphoto.cpp \
     ui/MainFrameSplitter.cpp \
-    ui/control/ControlToolbar.cpp
+    ui/RightFrameSplitter.cpp \
+    ui/control/ControlToolbar.cpp \
+    ui/panel/RightPanel.cpp \
+    ui/tab/AdjustStyleTab.cpp \
+    ui/tab/ColorPlansTab.cpp \
+    ui/tab/LevelChanelPathTab.cpp \
+    ui/widget/ColorWidget.cpp
 
 HEADERS += \
     MainWindow.h \
     model/UiModel.h \
     ui/MainFrameSplitter.h \
-    ui/control/ControlToolbar.h
+    ui/RightFrameSplitter.h \
+    ui/control/ControlToolbar.h \
+    ui/panel/RightPanel.h \
+    ui/tab/AdjustStyleTab.h \
+    ui/tab/ColorPlansTab.h \
+    ui/tab/LevelChanelPathTab.h \
+    ui/widget/ColorWidget.h
 
 FORMS += \
     MainWindow.ui

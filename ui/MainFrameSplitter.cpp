@@ -21,18 +21,21 @@ void MainFrameSplitter::init()
     setGeometry(0, 75, parentSize.width(), parentSize.height());
 
     setOpaqueResize(true);
-    setHandleWidth(5);
-    setStretchFactor(0,1);
-
-    ctrlBarHeaderSplit = new QLabel(this);
-    ctrlBarHeaderSplit->setFixedSize(72,2);
-    ctrlBarHeaderSplit->setStyleSheet("background-color:#262827;border:0px;margin-top:0px");
-
-    controlToolbar = new ControlToolbar(this);
+    setHandleWidth(4);////分离条目的宽度,注意qssSplit定义的宽度会影响显示效果
     setStyleSheet(qssSplit);
 
+    //ctrlBarHeaderSplit = new QLabel(this);
+    //ctrlBarHeaderSplit->setFixedSize(72,2);
+    //ctrlBarHeaderSplit->setStyleSheet("background-color:#262827;border:0px;margin-top:0px");
+
+    controlToolbar = new ControlToolbar(this);
     //放置到第0位置，即是左边的工具栏
     insertWidget(0, controlToolbar);
+
+    rightFrame = new RightFrameSplitter(this);
+    rightFrame->setup();
+    insertWidget(1, rightFrame);
+
 }
 
 

@@ -5,6 +5,7 @@
 #include <QSplitter>
 #include <QLabel>
 #include "ui/control/ControlToolbar.h"
+#include "ui/RightFrameSplitter.h"
 
 class MainFrameSplitter : public QSplitter
 {
@@ -16,13 +17,17 @@ private:
             margin-right:1px solid #262827;\
             background-color:#3f3f3f;\
             background-repeat:no-repeat;\
-            width: 1px;}";
+            width: 2px;}";
 
-    //控制工具栏
+    //左边：控制工具栏
     ControlToolbar *controlToolbar = nullptr;
+    //右边：分离框架
+    RightFrameSplitter * rightFrame = nullptr;
 
     QLabel * ctrlBarHeaderSplit = nullptr;
 
+    QLabel * centerPanel = nullptr;
+    QLabel * rightPanel = nullptr;
 
 private:
     //初始化UI
