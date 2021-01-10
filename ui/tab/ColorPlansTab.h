@@ -4,11 +4,13 @@
 #include <QTabWidget>
 #include <QLabel>
 
+#include "../widget/ChangeFrontBackColorWidget.h"
+
 class ColorPlansTab : public QTabWidget
 {
     Q_OBJECT
 private:
-    QLabel * colorWidget = nullptr;
+    ChangeFrontBackColorWidget * colorWidget = nullptr;
     QLabel * plansWidget = nullptr;
 
     const QString qssTab = "QTabWidget::panel { /* The tab widget frame */ \

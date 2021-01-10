@@ -9,8 +9,7 @@ void AdjustStyleTab::setup()
 {
     setStyleSheet(qssTab);
     adjustWidget = new QLabel(this);
-    adjustWidget->setFixedSize(250, 300);
-    adjustWidget->setText("colorWidget");
+    adjustWidget->setFixedSize(150, 150);
 
     styleWidget = new QLabel(this);
     styleWidget->setFixedSize(250, 300);

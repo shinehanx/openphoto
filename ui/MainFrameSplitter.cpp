@@ -29,6 +29,7 @@ void MainFrameSplitter::init()
     //ctrlBarHeaderSplit->setStyleSheet("background-color:#262827;border:0px;margin-top:0px");
 
     controlToolbar = new ControlToolbar(this);
+    controlToolbar->setup();
     //放置到第0位置，即是左边的工具栏
     insertWidget(0, controlToolbar);
 

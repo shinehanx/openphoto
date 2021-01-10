@@ -9,9 +9,9 @@ ColorPlansTab::ColorPlansTab(QWidget * parent) : QTabWidget(parent)
 void ColorPlansTab::setup()
 {
     setStyleSheet(qssTab);
-    colorWidget = new QLabel(this);
-    colorWidget->setFixedSize(250, 300);
-    colorWidget->setText("colorWidget");
+    colorWidget = new ChangeFrontBackColorWidget(this);
+    colorWidget->setFixedSize(60, 70);
+    colorWidget->setup();
 
     plansWidget = new QLabel(this);
     plansWidget->setFixedSize(250, 300);

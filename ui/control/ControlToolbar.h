@@ -7,9 +7,10 @@
 #include <QAction>
 #include <QToolButton>
 #include "model/UiModel.h"
+#include "ui/widget/ChangeFrontBackColorWidget.h"
 
 //工具栏的按钮数量（包含分割栏，不包含头部）
-#define DRAW_TOOLBUTTON_NUMS 11
+#define DRAW_TOOLBUTTON_NUMS 13
 
 class ControlToolbar : public QToolBar
 {
@@ -39,6 +40,7 @@ private:
             }";
     //头部
     QLabel * header = nullptr;
+    ChangeFrontBackColorWidget * changeFrontBackWidget = nullptr;
 
     //工具栏的按钮和元素
     ToolButtonData toolButtonDatas[DRAW_TOOLBUTTON_NUMS] {
@@ -52,19 +54,21 @@ private:
         {"Grid",":/rc/images/ctrlbar/grid.png",tr("网格工具")},
         {"Brush",":/rc/images/ctrlbar/brush.png",tr("画笔工具")},
         {"Stamp",":/rc/images/ctrlbar/stamp.png",tr("印章工具")},
-        {"Rubber",":/rc/images/ctrlbar/rubber.png",tr("橡皮擦工具")}
+        {"Rubber",":/rc/images/ctrlbar/rubber.png",tr("橡皮擦工具")},
+        {"-","-",tr("-")},
+        {"changeFrontBackWidget","-",tr("填充和描边")}
     };
 
 
 
     QVector<QAction *> toolButtons ;
 
-    //初始化UI
-    void initUi();
+
 
 public:
     explicit ControlToolbar(QWidget *parent = nullptr);
-
+    //初始化UI
+    void setup();
 signals:
     //点击工具栏按钮：信号
     void triggerDrawToolButton(QString);
