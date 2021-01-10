@@ -28,9 +28,11 @@ SOURCES += \
     ui/tab/ColorPlansTab.cpp \
     ui/tab/LevelChanelPathTab.cpp \
     ui/widget/ChangeFrontBackColorWidget.cpp \
+    ui/widget/ColorItemWidget.cpp \
     ui/widget/ColorWidget.cpp \
     ui/widget/FillStrokeColorWidget.cpp \
-    ui/widget/ImageView.cpp
+    ui/widget/ImageView.cpp \
+    ui/widget/slider/ColorItemSlider.cpp
 
 HEADERS += \
     MainWindow.h \
@@ -43,9 +45,11 @@ HEADERS += \
     ui/tab/ColorPlansTab.h \
     ui/tab/LevelChanelPathTab.h \
     ui/widget/ChangeFrontBackColorWidget.h \
+    ui/widget/ColorItemWidget.h \
     ui/widget/ColorWidget.h \
     ui/widget/FillStrokeColorWidget.h \
-    ui/widget/ImageView.h
+    ui/widget/ImageView.h \
+    ui/widget/slider/ColorItemSlider.h
 
 FORMS += \
     MainWindow.ui

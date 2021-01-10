@@ -16,7 +16,6 @@ private:
 
     const QString qssFillColorView = "QLabel {background-color: %1;border:1px solid #000000;}";
     const QString qssStrokeColorView = "QLabel {background-color: %1;border:2px solid %2;}";
-
     //填充颜色
     QLabel * fillColorView = nullptr;
     //描边颜色

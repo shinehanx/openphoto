@@ -4,24 +4,26 @@
 #include <QTabWidget>
 #include <QLabel>
 
-#include "../widget/ChangeFrontBackColorWidget.h"
+#include "../widget/ColorWidget.h"
 
 class ColorPlansTab : public QTabWidget
 {
     Q_OBJECT
 private:
-    ChangeFrontBackColorWidget * colorWidget = nullptr;
+    ColorWidget * colorWidget = nullptr;
     QLabel * plansWidget = nullptr;
 
-    const QString qssTab = "QTabWidget::panel { /* The tab widget frame */ \
-                        background-color:#4F4E4E; \
+    const QString qssTab = "QTabWidget{ /* The tab widget frame */ \
+                        background-color:#535353; \
                         position: absolute;\
-                        top: -0.5em;} \
+                        border:0px; margin-left:0px;border-color:transparent;} \
+                    QTabBar::pane { \
+                        border:0px;border-color:transparent;} \
                     QTabBar::tab { \
                         background-color: #393A3A; \
-                        color:#6D7377; } \
+                        color:#6D7377;} \
                     QTabBar::tab:selected {\
-                       background-color: #4F4E4E; \
+                       background-color: #535353; \
                        color:#ffffff;}";
 
 public:

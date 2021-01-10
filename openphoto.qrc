@@ -14,5 +14,6 @@
         <file>rc/images/ctrlbar/rubber.png</file>
         <file>rc/images/widget/change-fill-stroke.png</file>
         <file>rc/images/widget/fill-stroke.png</file>
+        <file>rc/images/widget/slider/slider-handle.png</file>
     </qresource>
 </RCC>
