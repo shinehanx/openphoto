@@ -27,6 +27,7 @@ SOURCES += \
     ui/tab/AdjustStyleTab.cpp \
     ui/tab/ColorPlansTab.cpp \
     ui/tab/LevelChanelPathTab.cpp \
+    ui/widget/ChangeFrontBackColorWidget.cpp \
     ui/widget/ColorWidget.cpp
 
 HEADERS += \
@@ -39,6 +40,7 @@ HEADERS += \
     ui/tab/AdjustStyleTab.h \
     ui/tab/ColorPlansTab.h \
     ui/tab/LevelChanelPathTab.h \
+    ui/widget/ChangeFrontBackColorWidget.h \
     ui/widget/ColorWidget.h
 
 FORMS += \
