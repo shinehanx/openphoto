@@ -19,7 +19,7 @@ private:
                 border-left: 1px solid #434343;\
                 border-top: 1px solid #434343;\
                 border-right: 1px solid #434343;\
-                border-bottom: 1px solid 434343;\
+                border-bottom: 1px solid #434343;\
             }";
     //头部
     QLabel * header = nullptr;

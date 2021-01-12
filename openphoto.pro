@@ -28,11 +28,13 @@ SOURCES += \
     ui/tab/ColorPlansTab.cpp \
     ui/tab/LevelChanelPathTab.cpp \
     ui/widget/ChangeFrontBackColorWidget.cpp \
-    ui/widget/ColorItemWidget.cpp \
-    ui/widget/ColorWidget.cpp \
+    ui/widget/ChromatogramWidget.cpp \
+    ui/widget/ColorChanelWidget.cpp \
+    ui/widget/ColorPanelWidget.cpp \
     ui/widget/FillStrokeColorWidget.cpp \
     ui/widget/ImageView.cpp \
-    ui/widget/slider/ColorItemSlider.cpp
+    ui/widget/RgbChanelWidget.cpp \
+    ui/widget/slider/ColorChanelSlider.cpp
 
 HEADERS += \
     MainWindow.h \
@@ -45,11 +47,13 @@ HEADERS += \
     ui/tab/ColorPlansTab.h \
     ui/tab/LevelChanelPathTab.h \
     ui/widget/ChangeFrontBackColorWidget.h \
-    ui/widget/ColorItemWidget.h \
-    ui/widget/ColorWidget.h \
+    ui/widget/ChromatogramWidget.h \
+    ui/widget/ColorChanelWidget.h \
+    ui/widget/ColorPanelWidget.h \
     ui/widget/FillStrokeColorWidget.h \
     ui/widget/ImageView.h \
-    ui/widget/slider/ColorItemSlider.h
+    ui/widget/RgbChanelWidget.h \
+    ui/widget/slider/ColorChanelSlider.h
 
 FORMS += \
     MainWindow.ui

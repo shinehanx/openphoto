@@ -4,7 +4,7 @@
 #define RIGHTPANEL_TAB_MARGIN 0
 #define RIGHTPANEL_TAB_MARGIN_T 2
 #define RIGHTPANEL_HEADER_H 12
-#define RIGHTPANEL_COLORPLANSTAB_H 250
+#define RIGHTPANEL_COLORPLANSTAB_H 150
 #define RIGHTPANEL_ADJUSTSTYLETAB_H 250
 #define RIGHTPANEL_LEVELCHANELPATHTAB_H 300
 
@@ -27,7 +27,7 @@ void RightPanel::setup()
 
     qDebug() << "RightPanel::size():" << size() << ",parent.size():" << ((QWidget *)parent())->size();
     colorPlansTab = new ColorPlansTab(this);
-    y = y + RIGHTPANEL_HEADER_H + RIGHTPANEL_TAB_MARGIN_T;
+    y = y + RIGHTPANEL_HEADER_H + RIGHTPANEL_TAB_MARGIN_T + 1;
     h = RIGHTPANEL_COLORPLANSTAB_H;
     colorPlansTab->setGeometry(x, y, w, h);
     colorPlansTab->setup();

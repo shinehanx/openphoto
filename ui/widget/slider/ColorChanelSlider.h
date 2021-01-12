@@ -1,14 +1,14 @@
-#ifndef COLORITEMSLIDER_H
-#define COLORITEMSLIDER_H
+#ifndef COLORCHANELSLIDER_H
+#define COLORCHANELSLIDER_H
 
 #include <QWidget>
 #include <QSlider>
 
 /**
- * @brief The ColorItemSlider class
+ * @brief The ColorChanelSlider class
  * 颜色滑块
  */
-class ColorItemSlider : public QSlider
+class ColorChanelSlider : public QSlider
 {
     Q_OBJECT
 private:
@@ -17,10 +17,10 @@ private:
                                QSlider::sub-page:horizontal {background-color: #535353;} \
                                QSlider::add-page:horizontal {background-color: #535353;}";
 public:
-    explicit ColorItemSlider(QWidget *parent = nullptr);
+    explicit ColorChanelSlider(QWidget *parent = nullptr);
     void setup();
 signals:
 
 };
 
-#endif // COLORITEMSLIDER_H
+#endif // COLORCHANELSLIDER_H

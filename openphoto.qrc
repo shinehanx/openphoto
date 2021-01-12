@@ -15,5 +15,6 @@
         <file>rc/images/widget/change-fill-stroke.png</file>
         <file>rc/images/widget/fill-stroke.png</file>
         <file>rc/images/widget/slider/slider-handle.png</file>
+        <file>rc/images/widget/red-diagonal-14.png</file>
     </qresource>
 </RCC>

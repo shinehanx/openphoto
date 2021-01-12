@@ -4,13 +4,13 @@
 #include <QTabWidget>
 #include <QLabel>
 
-#include "../widget/ColorWidget.h"
+#include "../widget/ColorPanelWidget.h"
 
 class ColorPlansTab : public QTabWidget
 {
     Q_OBJECT
 private:
-    ColorWidget * colorWidget = nullptr;
+    ColorPanelWidget * colorPanelWidget = nullptr;
     QLabel * plansWidget = nullptr;
 
     const QString qssTab = "QTabWidget{ /* The tab widget frame */ \
@@ -21,7 +21,7 @@ private:
                         border:0px;border-color:transparent;} \
                     QTabBar::tab { \
                         background-color: #393A3A; \
-                        color:#6D7377;} \
+                        color:#6D7377; } \
                     QTabBar::tab:selected {\
                        background-color: #535353; \
                        color:#ffffff;}";
