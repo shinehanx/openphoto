@@ -3,26 +3,30 @@
 
 #include <QTabWidget>
 #include <QLabel>
-
 #include "../widget/ColorPanelWidget.h"
+#include "../widget/PansPanelWidget.h"
 
 class ColorPlansTab : public QTabWidget
 {
     Q_OBJECT
 private:
     ColorPanelWidget * colorPanelWidget = nullptr;
-    QLabel * plansWidget = nullptr;
+    PansPanelWidget * plansPanelWidget = nullptr;
 
     const QString qssTab = "QTabWidget{ /* The tab widget frame */ \
                         background-color:#535353; \
                         position: absolute;\
-                        border:0px; margin-left:0px;border-color:transparent;} \
+                        border-top:1px solid #4a4a4a;} \
                     QTabBar::pane { \
-                        border:0px;border-color:transparent;} \
+                        border:1px solid #4a4a4a;} \
                     QTabBar::tab { \
+                        border-top:1px solid #4a4a4a;\
+                        width:50px; height:18px;\
                         background-color: #393A3A; \
                         color:#6D7377; } \
                     QTabBar::tab:selected {\
+                       border-top:1px solid #6a6a6a;\
+                       width:50px; height:18px;\
                        background-color: #535353; \
                        color:#ffffff;}";
 

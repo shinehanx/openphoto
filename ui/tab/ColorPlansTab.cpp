@@ -15,10 +15,10 @@ void ColorPlansTab::setup()
     colorPanelWidget->setGeometry(0,0, rect.width(), rect.height() - 20);
     colorPanelWidget->setup();
 
-    plansWidget = new QLabel(this);
-    plansWidget->setFixedSize(250, 300);
-    plansWidget->setText("plansWidget");
+    plansPanelWidget = new PansPanelWidget(this);
+    plansPanelWidget->setGeometry(0,0, rect.width(), rect.height() - 20);
+    plansPanelWidget->setup();
 
     addTab(colorPanelWidget, "颜色");
-    addTab(plansWidget, "色板");
+    addTab(plansPanelWidget, "色板");
 }

@@ -33,6 +33,7 @@ SOURCES += \
     ui/widget/ColorPanelWidget.cpp \
     ui/widget/FillStrokeColorWidget.cpp \
     ui/widget/ImageView.cpp \
+    ui/widget/PansPanelWidget.cpp \
     ui/widget/RgbChanelWidget.cpp \
     ui/widget/slider/ColorChanelSlider.cpp
 
@@ -52,6 +53,7 @@ HEADERS += \
     ui/widget/ColorPanelWidget.h \
     ui/widget/FillStrokeColorWidget.h \
     ui/widget/ImageView.h \
+    ui/widget/PansPanelWidget.h \
     ui/widget/RgbChanelWidget.h \
     ui/widget/slider/ColorChanelSlider.h
 

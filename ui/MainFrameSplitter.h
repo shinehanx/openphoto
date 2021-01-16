@@ -20,7 +20,7 @@ private:
             width: 2px;}";
 
     //左边：控制工具栏
-    ControlToolbar *controlToolbar = nullptr;
+    ControlToolbar * controlToolbar = nullptr;
     //右边：分离框架
     RightFrameSplitter * rightFrame = nullptr;
 

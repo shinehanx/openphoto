@@ -15,11 +15,8 @@ class RightPanel : public QWidget
     Q_OBJECT
 private:
     //头部qss
-    const QString qssHeader = "QLabel {background-color:#383838; \
-                border-left: 1px solid #434343;\
-                border-top: 1px solid #434343;\
-                border-right: 1px solid #434343;\
-                border-bottom: 1px solid #434343;\
+    const QString qssHeader = "QLabel {background-color:#393939; \
+                border-top: 1px solid #4a4a4a;\
             }";
     //头部
     QLabel * header = nullptr;

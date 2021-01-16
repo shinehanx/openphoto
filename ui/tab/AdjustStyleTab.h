@@ -12,16 +12,23 @@ class AdjustStyleTab : public QTabWidget
 {
     Q_OBJECT
 private:
-    const QString qssTab = "QTabWidget::panel { /* The tab widget frame */ \
-                        background-color:#4F4E4E; \
+    const QString qssTab = "QTabWidget{ /* The tab widget frame */ \
+                        background-color:#535353; \
                         position: absolute;\
-                        top: -0.5em;} \
+                        border-top:1px solid #4a4a4a;} \
+                    QTabBar::pane { \
+                        border:1px solid #4a4a4a;} \
                     QTabBar::tab { \
+                        border-top:1px solid #4a4a4a;\
+                        width:50px; height:18px;\
                         background-color: #393A3A; \
                         color:#6D7377; } \
                     QTabBar::tab:selected {\
-                       background-color: #4F4E4E; \
+                       border-top:1px solid #6a6a6a;\
+                       width:50px; height:18px;\
+                       background-color: #535353; \
                        color:#ffffff;}";
+
     QLabel * adjustWidget = nullptr;
     QLabel * styleWidget = nullptr;
 public:
