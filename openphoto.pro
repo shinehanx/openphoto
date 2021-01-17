@@ -30,12 +30,14 @@ SOURCES += \
     ui/widget/ChangeFrontBackColorWidget.cpp \
     ui/widget/ChromatogramWidget.cpp \
     ui/widget/ColorChanelWidget.cpp \
-    ui/widget/ColorPanelWidget.cpp \
     ui/widget/FillStrokeColorWidget.cpp \
     ui/widget/ImageView.cpp \
-    ui/widget/PansPanelWidget.cpp \
     ui/widget/RgbChanelWidget.cpp \
-    ui/widget/slider/ColorChanelSlider.cpp
+    ui/widget/panel/AdjustPanelWidget.cpp \
+    ui/widget/panel/ColorPanelWidget.cpp \
+    ui/widget/panel/PansPanelWidget.cpp \
+    ui/widget/slider/ColorChanelSlider.cpp \
+    ui/widget/toolbar/AdjustPanelToolBar.cpp
 
 HEADERS += \
     MainWindow.h \
@@ -50,12 +52,15 @@ HEADERS += \
     ui/widget/ChangeFrontBackColorWidget.h \
     ui/widget/ChromatogramWidget.h \
     ui/widget/ColorChanelWidget.h \
-    ui/widget/ColorPanelWidget.h \
     ui/widget/FillStrokeColorWidget.h \
     ui/widget/ImageView.h \
     ui/widget/PansPanelWidget.h \
     ui/widget/RgbChanelWidget.h \
-    ui/widget/slider/ColorChanelSlider.h
+    ui/widget/panel/AdjustPanelWidget.h \
+    ui/widget/panel/ColorPanelWidget.h \
+    ui/widget/panel/PansPanelWidget.h \
+    ui/widget/slider/ColorChanelSlider.h \
+    ui/widget/toolbar/AdjustPanelToolBar.h
 
 FORMS += \
     MainWindow.ui

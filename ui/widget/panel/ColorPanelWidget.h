@@ -3,9 +3,9 @@
 
 #include <QWidget>
 #include <QLabel>
-#include "FillStrokeColorWidget.h"
-#include "RgbChanelWidget.h"
-#include "ChromatogramWidget.h"
+#include "../FillStrokeColorWidget.h"
+#include "../RgbChanelWidget.h"
+#include "../ChromatogramWidget.h"
 
 class ColorPanelWidget : public QLabel
 {

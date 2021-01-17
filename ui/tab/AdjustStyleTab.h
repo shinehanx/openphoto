@@ -4,6 +4,8 @@
 #include <QTabWidget>
 #include <QLabel>
 
+#include "../widget/panel/AdjustPanelWidget.h"
+
 /**
  * @brief The AdjustStyleTab class
  * 调整/样式选择框
@@ -29,7 +31,7 @@ private:
                        background-color: #535353; \
                        color:#ffffff;}";
 
-    QLabel * adjustWidget = nullptr;
+    AdjustPanelWidget * adjustPanelWidget = nullptr;
     QLabel * styleWidget = nullptr;
 public:
     explicit AdjustStyleTab(QWidget *parent = nullptr);

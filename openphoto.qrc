@@ -19,5 +19,6 @@
         <file>rc/images/toolbar/panspanel/new-pans.png</file>
         <file>rc/images/toolbar/panspanel/del-pans.png</file>
         <file>rc/images/widget/header/double-arrow-right.png</file>
+        <file>rc/images/toolbar/adjustpanel/brightness.png</file>
     </qresource>
 </RCC>

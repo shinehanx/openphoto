@@ -3,8 +3,8 @@
 
 #include <QTabWidget>
 #include <QLabel>
-#include "../widget/ColorPanelWidget.h"
-#include "../widget/PansPanelWidget.h"
+#include "../widget/panel/ColorPanelWidget.h"
+#include "../widget/panel/PansPanelWidget.h"
 
 class ColorPlansTab : public QTabWidget
 {
