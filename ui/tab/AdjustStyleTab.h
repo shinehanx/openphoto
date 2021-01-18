@@ -5,6 +5,7 @@
 #include <QLabel>
 
 #include "../widget/panel/AdjustPanelWidget.h"
+#include "../widget/panel/StylePanelWidget.h"
 
 /**
  * @brief The AdjustStyleTab class
@@ -32,7 +33,7 @@ private:
                        color:#ffffff;}";
 
     AdjustPanelWidget * adjustPanelWidget = nullptr;
-    QLabel * styleWidget = nullptr;
+    StylePanelWidget * stylePanelWidget = nullptr;
 public:
     explicit AdjustStyleTab(QWidget *parent = nullptr);
     void setup();

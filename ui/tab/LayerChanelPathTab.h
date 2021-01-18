@@ -8,7 +8,7 @@
  * @brief The LevelChanelPathTab class
  * 图层/通道/路径
  */
-class LevelChanelPathTab : public QTabWidget
+class LayerChanelPathTab : public QTabWidget
 {
     Q_OBJECT
 private:
@@ -34,7 +34,7 @@ private:
                        color:#ffffff;}";
 
 public:
-    explicit LevelChanelPathTab(QWidget *parent = nullptr);
+    explicit LayerChanelPathTab(QWidget *parent = nullptr);
     void setup();
 signals:
 

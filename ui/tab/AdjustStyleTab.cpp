@@ -14,10 +14,10 @@ void AdjustStyleTab::setup()
     adjustPanelWidget->setGeometry(0,0, rect.width(), rect.height() - 20);
     adjustPanelWidget->setup();
 
-    styleWidget = new QLabel(this);
-    styleWidget->setGeometry(0,0, rect.width(), rect.height() - 20);
-    //styleWidget->setup();
+    stylePanelWidget = new StylePanelWidget(this);
+    stylePanelWidget->setGeometry(0,0, rect.width(), rect.height() - 20);
+    stylePanelWidget->setup();
 
     addTab(adjustPanelWidget, "调整");
-    addTab(styleWidget, "样式");
+    addTab(stylePanelWidget, "样式");
 }

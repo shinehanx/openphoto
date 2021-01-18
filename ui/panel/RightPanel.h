@@ -4,7 +4,7 @@
 #include <QWidget>
 #include <ui/tab/ColorPlansTab.h>
 #include <ui/tab/AdjustStyleTab.h>
-#include <ui/tab/LevelChanelPathTab.h>
+#include <ui/tab/LayerChanelPathTab.h>
 #include <QVBoxLayout>
 /**
  * @brief The RightPanel class
@@ -27,7 +27,7 @@ public:
     QVBoxLayout * vBoxLayout = nullptr;
     ColorPlansTab * colorPlansTab = nullptr;
     AdjustStyleTab * adjustStyleTab = nullptr;
-    LevelChanelPathTab * levelChanelPathTab = nullptr;
+    LayerChanelPathTab * layerChanelPathTab = nullptr;
 signals:
 
 };

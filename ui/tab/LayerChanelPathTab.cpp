@@ -1,11 +1,11 @@
-#include "LevelChanelPathTab.h"
+#include "LayerChanelPathTab.h"
 
-LevelChanelPathTab::LevelChanelPathTab(QWidget *parent) : QTabWidget(parent)
+LayerChanelPathTab::LayerChanelPathTab(QWidget *parent) : QTabWidget(parent)
 {
 
 }
 
-void LevelChanelPathTab::setup()
+void LayerChanelPathTab::setup()
 {
     setStyleSheet(qssTab);
     levelWidget = new QLabel(this);

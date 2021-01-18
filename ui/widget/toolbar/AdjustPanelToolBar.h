@@ -10,10 +10,10 @@ class AdjustPanelToolBar : public QToolBar
 private:
     //toolbar qss
     const QString qssToolBar = "QToolBar { background-color:#535353;\
-            spacing: 3px;\
-            padding:0px 32px 0px 0px;\
+            spacing: 5px;\
+            padding:0px 2px 0px 0px;\
             border:0px solid #707070;} \
-          QToolButton {margin-right:10px; width:20px;\
+          QToolButton {width:20px;\
             height:20px; \
             background-color:#535353;\
             border: 0px solid #333333; }\

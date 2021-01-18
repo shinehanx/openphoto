@@ -26,16 +26,19 @@ SOURCES += \
     ui/panel/RightPanel.cpp \
     ui/tab/AdjustStyleTab.cpp \
     ui/tab/ColorPlansTab.cpp \
-    ui/tab/LevelChanelPathTab.cpp \
+    ui/tab/LayerChanelPathTab.cpp \
     ui/widget/ChangeFrontBackColorWidget.cpp \
     ui/widget/ChromatogramWidget.cpp \
     ui/widget/ColorChanelWidget.cpp \
     ui/widget/FillStrokeColorWidget.cpp \
     ui/widget/ImageView.cpp \
     ui/widget/RgbChanelWidget.cpp \
+    ui/widget/grid/GridItemWidget.cpp \
+    ui/widget/grid/GridListWidget.cpp \
     ui/widget/panel/AdjustPanelWidget.cpp \
     ui/widget/panel/ColorPanelWidget.cpp \
     ui/widget/panel/PansPanelWidget.cpp \
+    ui/widget/panel/StylePanelWidget.cpp \
     ui/widget/slider/ColorChanelSlider.cpp \
     ui/widget/toolbar/AdjustPanelToolBar.cpp
 
@@ -48,7 +51,7 @@ HEADERS += \
     ui/panel/RightPanel.h \
     ui/tab/AdjustStyleTab.h \
     ui/tab/ColorPlansTab.h \
-    ui/tab/LevelChanelPathTab.h \
+    ui/tab/LayerChanelPathTab.h \
     ui/widget/ChangeFrontBackColorWidget.h \
     ui/widget/ChromatogramWidget.h \
     ui/widget/ColorChanelWidget.h \
@@ -56,9 +59,12 @@ HEADERS += \
     ui/widget/ImageView.h \
     ui/widget/PansPanelWidget.h \
     ui/widget/RgbChanelWidget.h \
+    ui/widget/grid/GridItemWidget.h \
+    ui/widget/grid/GridListWidget.h \
     ui/widget/panel/AdjustPanelWidget.h \
     ui/widget/panel/ColorPanelWidget.h \
     ui/widget/panel/PansPanelWidget.h \
+    ui/widget/panel/StylePanelWidget.h \
     ui/widget/slider/ColorChanelSlider.h \
     ui/widget/toolbar/AdjustPanelToolBar.h
 

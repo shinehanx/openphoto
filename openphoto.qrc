@@ -20,5 +20,16 @@
         <file>rc/images/toolbar/panspanel/del-pans.png</file>
         <file>rc/images/widget/header/double-arrow-right.png</file>
         <file>rc/images/toolbar/adjustpanel/brightness.png</file>
+        <file>rc/images/toolbar/adjustpanel/levelset.png</file>
+        <file>rc/images/toolbar/adjustpanel/curve.png</file>
+        <file>rc/images/toolbar/adjustpanel/exposure.png</file>
+        <file>rc/images/toolbar/adjustpanel/saturation.png</file>
+        <file>rc/images/toolbar/adjustpanel/hue.png</file>
+        <file>rc/images/toolbar/stylepanel/clear.png</file>
+        <file>rc/images/toolbar/stylepanel/target.png</file>
+        <file>rc/images/toolbar/stylepanel/light.png</file>
+        <file>rc/images/toolbar/stylepanel/share.png</file>
+        <file>rc/images/toolbar/stylepanel/lab.png</file>
+        <file>rc/images/toolbar/panspanel/forbid.png</file>
     </qresource>
 </RCC>

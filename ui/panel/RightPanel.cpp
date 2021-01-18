@@ -5,7 +5,7 @@
 #define RIGHTPANEL_TAB_MARGIN_T 2
 #define RIGHTPANEL_HEADER_H 12
 #define RIGHTPANEL_COLORPLANSTAB_H 150
-#define RIGHTPANEL_ADJUSTSTYLETAB_H 250
+#define RIGHTPANEL_ADJUSTSTYLETAB_H 150
 #define RIGHTPANEL_LEVELCHANELPATHTAB_H 300
 
 RightPanel::RightPanel(QWidget *parent) : QWidget(parent)
@@ -38,9 +38,9 @@ void RightPanel::setup()
     adjustStyleTab->setGeometry(x, y, w, h);
     adjustStyleTab->setup();
 
-    levelChanelPathTab = new LevelChanelPathTab(this);
+    layerChanelPathTab = new LayerChanelPathTab(this);
     y = y + RIGHTPANEL_ADJUSTSTYLETAB_H + RIGHTPANEL_TAB_MARGIN_T;
     h = RIGHTPANEL_LEVELCHANELPATHTAB_H;
-    levelChanelPathTab->setGeometry(x, y, w, h);
-    levelChanelPathTab->setup();
+    layerChanelPathTab->setGeometry(x, y, w, h);
+    layerChanelPathTab->setup();
 }
