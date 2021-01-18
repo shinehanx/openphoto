@@ -4,6 +4,7 @@
 
 //工具栏的数据
 typedef struct _ToolButtonData{
+    QString type; //类型，比如QLabel/QListView等
     QString name; //工具栏名
     QString icon; //工具栏图标
     QString tip; //工具栏tooltip

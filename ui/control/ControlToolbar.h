@@ -45,19 +45,19 @@ private:
 
     //工具栏的按钮和元素
     ToolButtonData toolButtonDatas[DRAW_TOOLBUTTON_NUMS] {
-        {"Move",":/rc/images/toolbar/move.png",tr("移动")},
-        {"Select",":/rc/images/ctrlbar/EllipseSel.png",tr("选择工具")},
-        {"Lariat",":/rc/images/ctrlbar/lariat.png",tr("套索工具")},
-        {"Painting-board",":/rc/images/ctrlbar//painting-board.png",tr("画板工具")},
-        {"Crop",":/rc/images/ctrlbar/psi-crop-2.png",tr("裁剪工具")},
-        {"Pipette",":/rc/images/ctrlbar/pipette.png",tr("吸管工具")},
-        {"-","-",tr("-")},
-        {"Grid",":/rc/images/ctrlbar/grid.png",tr("网格工具")},
-        {"Brush",":/rc/images/ctrlbar/brush.png",tr("画笔工具")},
-        {"Stamp",":/rc/images/ctrlbar/stamp.png",tr("印章工具")},
-        {"Rubber",":/rc/images/ctrlbar/rubber.png",tr("橡皮擦工具")},
-        {"-","-",tr("-")},
-        {"changeFrontBackWidget","-",tr("填充和描边")}
+        {"ToolButton", "Move",":/rc/images/toolbar/move.png",tr("移动")},
+        {"ToolButton","Select",":/rc/images/ctrlbar/EllipseSel.png",tr("选择工具")},
+        {"ToolButton","Lariat",":/rc/images/ctrlbar/lariat.png",tr("套索工具")},
+        {"ToolButton","Painting-board",":/rc/images/ctrlbar//painting-board.png",tr("画板工具")},
+        {"ToolButton","Crop",":/rc/images/ctrlbar/psi-crop-2.png",tr("裁剪工具")},
+        {"ToolButton","Pipette",":/rc/images/ctrlbar/pipette.png",tr("吸管工具")},
+        {"-","-","-",tr("-")},
+        {"ToolButton","Grid",":/rc/images/ctrlbar/grid.png",tr("网格工具")},
+        {"ToolButton","Brush",":/rc/images/ctrlbar/brush.png",tr("画笔工具")},
+        {"ToolButton","Stamp",":/rc/images/ctrlbar/stamp.png",tr("印章工具")},
+        {"ToolButton","Rubber",":/rc/images/ctrlbar/rubber.png",tr("橡皮擦工具")},
+        {"ToolButton","-","-",tr("-")},
+        {"ToolButton","changeFrontBackWidget","-",tr("填充和描边")}
     };
 
 

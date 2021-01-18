@@ -31,5 +31,10 @@
         <file>rc/images/toolbar/stylepanel/share.png</file>
         <file>rc/images/toolbar/stylepanel/lab.png</file>
         <file>rc/images/toolbar/panspanel/forbid.png</file>
+        <file>rc/images/toolbar/layerpanel/pix-layer-filter.png</file>
+        <file>rc/images/toolbar/layerpanel/adjust-layer-filter.png</file>
+        <file>rc/images/toolbar/layerpanel/shape-layer-filter.png</file>
+        <file>rc/images/toolbar/layerpanel/intelli-layer-filter.png</file>
+        <file>rc/images/toolbar/layerpanel/text-layer-filter.png</file>
     </qresource>
 </RCC>

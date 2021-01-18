@@ -3,7 +3,7 @@
 
 #include <QTabWidget>
 #include <QLabel>
-
+#include "../widget/panel/LayerPanelWidget.h"
 /**
  * @brief The LevelChanelPathTab class
  * 图层/通道/路径
@@ -12,7 +12,7 @@ class LayerChanelPathTab : public QTabWidget
 {
     Q_OBJECT
 private:
-    QLabel * levelWidget = nullptr;
+    LayerPanelWidget * layerPanelWidget = nullptr;
     QLabel * chanelWidget = nullptr;
     QLabel * pathWidget = nullptr;
 

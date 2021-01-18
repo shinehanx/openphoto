@@ -37,10 +37,14 @@ SOURCES += \
     ui/widget/grid/GridListWidget.cpp \
     ui/widget/panel/AdjustPanelWidget.cpp \
     ui/widget/panel/ColorPanelWidget.cpp \
+    ui/widget/panel/LayerPanelWidget.cpp \
     ui/widget/panel/PansPanelWidget.cpp \
     ui/widget/panel/StylePanelWidget.cpp \
     ui/widget/slider/ColorChanelSlider.cpp \
-    ui/widget/toolbar/AdjustPanelToolBar.cpp
+    ui/widget/toolbar/AdjustPanelToolBar.cpp \
+    ui/widget/toolbar/LayerLockToolBar.cpp \
+    ui/widget/toolbar/LayerOpacityToolBar.cpp \
+    ui/widget/toolbar/LayerTypeToolBar.cpp
 
 HEADERS += \
     MainWindow.h \
@@ -63,10 +67,14 @@ HEADERS += \
     ui/widget/grid/GridListWidget.h \
     ui/widget/panel/AdjustPanelWidget.h \
     ui/widget/panel/ColorPanelWidget.h \
+    ui/widget/panel/LayerPanelWidget.h \
     ui/widget/panel/PansPanelWidget.h \
     ui/widget/panel/StylePanelWidget.h \
     ui/widget/slider/ColorChanelSlider.h \
-    ui/widget/toolbar/AdjustPanelToolBar.h
+    ui/widget/toolbar/AdjustPanelToolBar.h \
+    ui/widget/toolbar/LayerLockToolBar.h \
+    ui/widget/toolbar/LayerOpacityToolBar.h \
+    ui/widget/toolbar/LayerTypeToolBar.h
 
 FORMS += \
     MainWindow.ui
