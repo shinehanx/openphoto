@@ -17,4 +17,11 @@ typedef struct _GridListItemData{
     QString tip; //工具栏tooltip
 } GridListItemData;
 
+//图层历史的数据
+typedef struct _LayerLogListItemData{
+    QString name; //工具栏名
+    QString img; //工具栏图标
+    QString text; //工具栏tooltip
+} LayerLogListItemData;
+
 #endif // UIMODEL_H

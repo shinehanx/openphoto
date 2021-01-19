@@ -36,6 +36,12 @@ void LayerPanelWidget::setup()
     y += LAYERPANELWIDGET_ITEM_HT;
     layerLockToolbar->setGeometry(x, y, w, h);
     layerLockToolbar->setup();
+
+    layerLogListWidget = new LayerLogListWidget(layerLogListItemData, LAYERLOGITEMDATA_SIZE, this);
+    y += LAYERPANELWIDGET_ITEM_HT;
+    h = rect.height() - y;
+    layerLogListWidget->setGeometry(x, y, w, h);
+    layerLogListWidget->setup();
 }
 
 

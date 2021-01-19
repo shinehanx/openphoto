@@ -43,10 +43,10 @@ private:
 
     ToolButtonData toolButtonDatas[LAYERLOCK_TOOLBUTTONDATAS_SIZE] = {
         {"Label","锁定:", "", tr("锁定")},
-        {"ToolButton","adjustLayerFilter", ":/rc/images/toolbar/layerpanel/adjust-layer-filter.png", tr("调整图层滤镜")},
-        {"ToolButton","textLayerFilter", ":/rc/images/toolbar/layerpanel/text-layer-filter.png", tr("文字图层滤镜")},
-        {"ToolButton","shapeLayerFilter", ":/rc/images/toolbar/layerpanel/shape-layer-filter.png", tr("形状图层滤镜")},
-        {"ToolButton","intelliLayerFilter", ":/rc/images/toolbar/layerpanel/intelli-layer-filter.png", tr("智能图层滤镜")},
+        {"ToolButton","lockTransparentPix", ":/rc/images/toolbar/layerpanel/lock-transparent-pix.png", tr("锁定透明像素")},
+        {"ToolButton","lockImgPix", ":/rc/images/toolbar/layerpanel/lock-img-pix.png", tr("锁定图像像素")},
+        {"ToolButton","lockPosition", ":/rc/images/toolbar/layerpanel/lock-position.png", tr("锁定位置")},
+        {"ToolButton","lockAll", ":/rc/images/toolbar/layerpanel/lock-all.png", tr("锁定所有")},
         {"Label","锁定:", "", tr("填充")},
 		{"ComboBox","percent", "", tr("不透明度百分比")}
     };

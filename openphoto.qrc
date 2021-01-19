@@ -36,5 +36,11 @@
         <file>rc/images/toolbar/layerpanel/shape-layer-filter.png</file>
         <file>rc/images/toolbar/layerpanel/intelli-layer-filter.png</file>
         <file>rc/images/toolbar/layerpanel/text-layer-filter.png</file>
+        <file>rc/images/toolbar/layerpanel/lock-img-pix.png</file>
+        <file>rc/images/toolbar/layerpanel/lock-all.png</file>
+        <file>rc/images/toolbar/layerpanel/lock-transparent-pix.png</file>
+        <file>rc/images/toolbar/layerpanel/lock-position.png</file>
+        <file>rc/images/toolbar/layerpanel/eye.png</file>
+        <file>rc/images/toolbar/layerpanel/pic.png</file>
     </qresource>
 </RCC>

@@ -35,6 +35,9 @@ SOURCES += \
     ui/widget/RgbChanelWidget.cpp \
     ui/widget/grid/GridItemWidget.cpp \
     ui/widget/grid/GridListWidget.cpp \
+    ui/widget/list/LayerLogItemWidget.cpp \
+    ui/widget/list/LayerLogListWidget.cpp \
+    ui/widget/list/LogItemWidget.cpp \
     ui/widget/panel/AdjustPanelWidget.cpp \
     ui/widget/panel/ColorPanelWidget.cpp \
     ui/widget/panel/LayerPanelWidget.cpp \
@@ -65,6 +68,9 @@ HEADERS += \
     ui/widget/RgbChanelWidget.h \
     ui/widget/grid/GridItemWidget.h \
     ui/widget/grid/GridListWidget.h \
+    ui/widget/list/LayerLogItemWidget.h \
+    ui/widget/list/LayerLogListWidget.h \
+    ui/widget/list/LogItemWidget.h \
     ui/widget/panel/AdjustPanelWidget.h \
     ui/widget/panel/ColorPanelWidget.h \
     ui/widget/panel/LayerPanelWidget.h \

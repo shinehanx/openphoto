@@ -40,7 +40,7 @@ void RightPanel::setup()
 
     layerChanelPathTab = new LayerChanelPathTab(this);
     y = y + RIGHTPANEL_ADJUSTSTYLETAB_H + RIGHTPANEL_TAB_MARGIN_T;
-    h = RIGHTPANEL_LEVELCHANELPATHTAB_H;
+    h = size().height() - y;
     layerChanelPathTab->setGeometry(x, y, w, h);
     layerChanelPathTab->setup();
 }
