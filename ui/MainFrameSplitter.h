@@ -29,15 +29,11 @@ private:
     QLabel * centerPanel = nullptr;
     QLabel * rightPanel = nullptr;
 
-private:
-    //初始化UI
-    void init();
-
-protected:
-
 public:
     explicit MainFrameSplitter(QWidget * parent=nullptr);
     explicit MainFrameSplitter(Qt::Orientation, QWidget * parent=nullptr);
+    //初始化UI
+    void setup();
 };
 
 #endif // DRAWTOOLPANEL_H

@@ -8,7 +8,7 @@ class GridItemWidget : public QLabel
 {
     Q_OBJECT
 private:
-    QString qss = "{border: 1px solid #919191;background-color:#535353;}";
+    QString qssImageView = "QLabel {border:0px;}";
     ImageView * imageView = nullptr;
     QString icon ;
     QSize iconSize ;

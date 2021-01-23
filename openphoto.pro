@@ -35,13 +35,17 @@ SOURCES += \
     ui/widget/RgbChanelWidget.cpp \
     ui/widget/grid/GridItemWidget.cpp \
     ui/widget/grid/GridListWidget.cpp \
+    ui/widget/list/ChanelItemWidget.cpp \
+    ui/widget/list/ChanelListWidget.cpp \
     ui/widget/list/LayerLogItemWidget.cpp \
     ui/widget/list/LayerLogListWidget.cpp \
     ui/widget/list/LogItemWidget.cpp \
     ui/widget/panel/AdjustPanelWidget.cpp \
+    ui/widget/panel/ChanelPanelWidget.cpp \
     ui/widget/panel/ColorPanelWidget.cpp \
     ui/widget/panel/LayerPanelWidget.cpp \
     ui/widget/panel/PansPanelWidget.cpp \
+    ui/widget/panel/PathPanelWidget.cpp \
     ui/widget/panel/StylePanelWidget.cpp \
     ui/widget/slider/ColorChanelSlider.cpp \
     ui/widget/toolbar/AdjustPanelToolBar.cpp \
@@ -68,13 +72,17 @@ HEADERS += \
     ui/widget/RgbChanelWidget.h \
     ui/widget/grid/GridItemWidget.h \
     ui/widget/grid/GridListWidget.h \
+    ui/widget/list/ChanelItemWidget.h \
+    ui/widget/list/ChanelListWidget.h \
     ui/widget/list/LayerLogItemWidget.h \
     ui/widget/list/LayerLogListWidget.h \
     ui/widget/list/LogItemWidget.h \
     ui/widget/panel/AdjustPanelWidget.h \
+    ui/widget/panel/ChanelPanelWidget.h \
     ui/widget/panel/ColorPanelWidget.h \
     ui/widget/panel/LayerPanelWidget.h \
     ui/widget/panel/PansPanelWidget.h \
+    ui/widget/panel/PathPanelWidget.h \
     ui/widget/panel/StylePanelWidget.h \
     ui/widget/slider/ColorChanelSlider.h \
     ui/widget/toolbar/AdjustPanelToolBar.h \

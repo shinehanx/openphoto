@@ -8,7 +8,7 @@ RightFrameSplitter::RightFrameSplitter(QWidget *parent) : QSplitter(Qt::Horizont
 void RightFrameSplitter::setup()
 {
 
-    setOpaqueResize(false);
+    setOpaqueResize(true);
     setHandleWidth(4); //分离条目的宽度,注意qssSplit定义的宽度会影响显示效果
     //setStretchFactor(0,1);//拉伸策略
 
@@ -22,7 +22,7 @@ void RightFrameSplitter::setup()
 
     rightPanel = new RightPanel(this);
     rightPanel->setFixedWidth(240);
-    rightPanel->setFixedHeight(parentSize.height());
+    rightPanel->setFixedHeight(parentSize.height() - 65);
     rightPanel->setup();
     insertWidget(1, rightPanel);
 }

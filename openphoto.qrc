@@ -2,16 +2,7 @@
     <qresource prefix="/">
         <file>rc/images/toolbar/move.png</file>
         <file>rc/style/stylesheet.qss</file>
-        <file>rc/images/ctrlbar/EllipseSel.png</file>
         <file>rc/images/ctrlbar/split.png</file>
-        <file>rc/images/ctrlbar/psi-crop-2.png</file>
-        <file>rc/images/ctrlbar/brush.png</file>
-        <file>rc/images/ctrlbar/lariat.png</file>
-        <file>rc/images/ctrlbar/pipette.png</file>
-        <file>rc/images/ctrlbar/grid.png</file>
-        <file>rc/images/ctrlbar/painting-board.png</file>
-        <file>rc/images/ctrlbar/stamp.png</file>
-        <file>rc/images/ctrlbar/rubber.png</file>
         <file>rc/images/widget/change-fill-stroke.png</file>
         <file>rc/images/widget/fill-stroke.png</file>
         <file>rc/images/widget/slider/slider-handle.png</file>
@@ -42,5 +33,14 @@
         <file>rc/images/toolbar/layerpanel/lock-position.png</file>
         <file>rc/images/toolbar/layerpanel/eye.png</file>
         <file>rc/images/toolbar/layerpanel/pic.png</file>
+        <file>rc/images/ctrlbar/brush.png</file>
+        <file>rc/images/ctrlbar/EllipseSel.png</file>
+        <file>rc/images/ctrlbar/grid.png</file>
+        <file>rc/images/ctrlbar/lariat.png</file>
+        <file>rc/images/ctrlbar/painting.png</file>
+        <file>rc/images/ctrlbar/pipette.png</file>
+        <file>rc/images/ctrlbar/crop.png</file>
+        <file>rc/images/ctrlbar/rubber.png</file>
+        <file>rc/images/ctrlbar/stamp.png</file>
     </qresource>
 </RCC>

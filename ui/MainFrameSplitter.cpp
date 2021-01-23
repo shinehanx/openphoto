@@ -2,24 +2,22 @@
 #include <QDebug>
 MainFrameSplitter::MainFrameSplitter(QWidget * parent) : QSplitter(Qt::Horizontal, parent)
 {
-    init();
+
 }
 
 
 MainFrameSplitter::MainFrameSplitter(Qt::Orientation orientation, QWidget * parent) : QSplitter(orientation,parent)
 {
-    init();
+
 }
 
 /**
  * @brief DrawToolPanel::init
  * 初始化
  */
-void MainFrameSplitter::init()
+void MainFrameSplitter::setup()
 {
     QSize parentSize = ((QWidget*)parent())->size();
-    setGeometry(0, 75, parentSize.width(), parentSize.height());
-
     setOpaqueResize(true);
     setHandleWidth(4);////分离条目的宽度,注意qssSplit定义的宽度会影响显示效果
     setStyleSheet(qssSplit);

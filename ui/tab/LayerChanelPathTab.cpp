@@ -1,5 +1,5 @@
 #include "LayerChanelPathTab.h"
-
+#include <QDebug>
 LayerChanelPathTab::LayerChanelPathTab(QWidget *parent) : QTabWidget(parent)
 {
 
@@ -7,20 +7,22 @@ LayerChanelPathTab::LayerChanelPathTab(QWidget *parent) : QTabWidget(parent)
 
 void LayerChanelPathTab::setup()
 {
+    QRect rect = geometry();
+    qDebug() << "LayerChanelPathTab::size():" << size() << ",parent.size():" << ((QWidget *)parent())->size();
     setStyleSheet(qssTab);
     layerPanelWidget = new LayerPanelWidget(this);
-    layerPanelWidget->setFixedSize(250, 300);
+    layerPanelWidget->setGeometry(0,0, rect.width(), rect.height() - 20);
     layerPanelWidget->setup();
 
-    chanelWidget = new QLabel(this);
-    chanelWidget->setFixedSize(250, 300);
-    chanelWidget->setText("plansWidget");
+    chanelPanelWidget = new ChanelPanelWidget(this);
+    chanelPanelWidget->setGeometry(0,0, rect.width(), rect.height() - 20);
+    chanelPanelWidget->setup();
 
-    pathWidget = new QLabel(this);
-    pathWidget->setFixedSize(250, 300);
-    pathWidget->setText("pathWidget");
+    pathPanelWidget = new PathPanelWidget(this);
+    pathPanelWidget->setGeometry(0,0, rect.width(), rect.height() - 20);
+    pathPanelWidget->setup();
 
     addTab(layerPanelWidget, "图层");
-    addTab(chanelWidget, "通道");
-    addTab(pathWidget, "路径");
+    addTab(chanelPanelWidget, "通道");
+    addTab(pathPanelWidget, "路径");
 }

@@ -22,13 +22,13 @@ private:
               margin-top:2px;\
               border: 2px solid #525252;\
               padding: 2px solid #585858;} \
-            QToolButton { width:48px;\
-              height:40px;\
+            QToolButton { width:32px;\
+              height:24px;\
               background-color: transparent; \
               border: 0px; }\
             QToolButton:hover{\
               border:2px solid #262827;\
-              border-radius: 4px;\
+              border-radius: 3px;\
               background-color:#3e3e3e;\
             }";
 
@@ -48,8 +48,8 @@ private:
         {"ToolButton", "Move",":/rc/images/toolbar/move.png",tr("移动")},
         {"ToolButton","Select",":/rc/images/ctrlbar/EllipseSel.png",tr("选择工具")},
         {"ToolButton","Lariat",":/rc/images/ctrlbar/lariat.png",tr("套索工具")},
-        {"ToolButton","Painting-board",":/rc/images/ctrlbar//painting-board.png",tr("画板工具")},
-        {"ToolButton","Crop",":/rc/images/ctrlbar/psi-crop-2.png",tr("裁剪工具")},
+        {"ToolButton","Painting",":/rc/images/ctrlbar/painting.png",tr("画板工具")},
+        {"ToolButton","Crop",":/rc/images/ctrlbar/crop.png",tr("裁剪工具")},
         {"ToolButton","Pipette",":/rc/images/ctrlbar/pipette.png",tr("吸管工具")},
         {"-","-","-",tr("-")},
         {"ToolButton","Grid",":/rc/images/ctrlbar/grid.png",tr("网格工具")},

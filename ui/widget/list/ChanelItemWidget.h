@@ -1,5 +1,5 @@
-#ifndef LAYERLOGITEMWIDGET_H
-#define LAYERLOGITEMWIDGET_H
+#ifndef CHANELITEMWIDGET_H
+#define CHANELITEMWIDGET_H
 
 #include <QWidget>
 #include <QLabel>
@@ -7,7 +7,7 @@
 #include "../grid/GridItemWidget.h"
 #include "LogItemWidget.h"
 
-class LayerLogItemWidget : public QWidget
+class ChanelItemWidget : public QWidget
 {
     Q_OBJECT
 private:
@@ -16,12 +16,13 @@ private:
     LogItemWidget * imgItem = nullptr;
     QString imgPath;
     QString itemText;
+	QString shotcutText;
 public:
-    explicit LayerLogItemWidget(QWidget *parent = nullptr);
-    explicit LayerLogItemWidget(QString _imgPath, QString _itemText, QWidget *parent=nullptr);
+    explicit ChanelItemWidget(QWidget *parent = nullptr);
+    explicit ChanelItemWidget(QString _imgPath, QString _itemText, QString _shotcutText, QWidget *parent=nullptr);
     void setup();
 signals:
 
 };
 
-#endif // LAYERLOGITEMWIDGET_H
+#endif // CHANELITEMWIDGET_H

@@ -8,8 +8,10 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QRect desktopRect = QApplication::desktop()->availableGeometry(-1);
-    this->setGeometry(desktopRect);
+    QRect rect = QApplication::desktop()->availableGeometry(-1);
+    int iTitleBarHeight = style()->pixelMetric(QStyle::PM_TitleBarHeight);  // 获取标题栏高度
+    rect.setHeight(rect.height() - iTitleBarHeight);
+    this->setGeometry(rect);
     this->setStyleSheet("background-color:#262827;");
 
     createActions();
@@ -59,7 +61,8 @@ void MainWindow::createToolbars()
 void MainWindow::createSplitters()
 {
     mainSplitter = new MainFrameSplitter(this);
-    qDebug() << "width:" << size().width() << ",height:" << size().height();
-
-    mainSplitter->show();
+    qDebug() << "MainWindow::size()::width:" << size().width() << ",height:" << size().height();
+    qDebug() << "MainWindow::geometry()::width:" << geometry().width() << ",height:" << geometry().height();
+    mainSplitter->setGeometry(0, 75, geometry().width(), geometry().height());
+    mainSplitter->setup();
 }

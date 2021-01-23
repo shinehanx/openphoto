@@ -10,7 +10,7 @@ class GridListWidget : public QListWidget
 private:
     int gridListItemSize = 0;
     GridListItemData * gridListItemData;
-    QString qss = "{border: 1px solid rgba(255, 255, 255, 0.5);background-color:#919191;}";
+    QString qss = "QListWidget {border: 1px solid rgba(255, 255, 255, 0.5);background-color:#919191;}";
 
 
 public:

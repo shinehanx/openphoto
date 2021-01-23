@@ -26,9 +26,6 @@ void ImageView::show(int x,int y,int w,int h, const QString &imagePath)
 
 void ImageView::show(const QSize &size, const QString &imagePath)
 {
-    //qDebug() << "ImageView::show() imagePath:" << imagePath;
-    //qDebug() << "ImageView::show() size:" << size;
-
     this->setFixedSize(size);
 
     QPixmap pixmap(imagePath);
@@ -37,6 +34,5 @@ void ImageView::show(const QSize &size, const QString &imagePath)
         int w=size.width();
         int h=size.height();
         this->setPixmap(pixmap.scaled(w,h, Qt::IgnoreAspectRatio, Qt::SmoothTransformation));
-
     }
 }

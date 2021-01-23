@@ -18,6 +18,20 @@ class LayerPanelWidget : public QLabel
     Q_OBJECT
 private:
     const QString qss = "QLabel{background-color:#464646;border: 0px}";
+    const QString qssToolBar = "QToolBar { background-color:#535353;\
+              spacing: 3px;\
+              padding:0px 32px 0px 0px;\
+              border-top:1px solid #707070;} \
+            QToolButton {margin-top:1px;margin-right:10px; width:16px;\
+              height:14px; \
+              background-color:#535353;\
+              border: 0px solid #333333; }\
+            QToolButton:hover{\
+              border-left: 1px solid #333333;\
+              border-right: 1px solid #333333;\
+              background-color:#6f6f6f;\
+            }";
+
     LayerLogListItemData layerLogListItemData[LAYERLOGITEMDATA_SIZE] = {
         {"layer1",":/rc/images/toolbar/layerpanel/pic.png","layer1"},
         {"layer2",":/rc/images/toolbar/layerpanel/pic.png","layer2"},
@@ -30,6 +44,11 @@ private:
     LayerOpacityToolBar * layerOpacityToolbar = nullptr;
     LayerLockToolBar * layerLockToolbar = nullptr;
     LayerLogListWidget * layerLogListWidget = nullptr;
+
+    QToolBar * toolbar;
+    QAction * delAction;
+    QAction * newAction;
+    QAction * forbidAction;
 
 public:
     explicit LayerPanelWidget(QWidget *parent = nullptr);

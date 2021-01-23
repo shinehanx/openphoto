@@ -15,12 +15,12 @@ void ControlToolbar::setup()
 {
     setOrientation(Qt::Vertical); //垂直摆放
     setStyleSheet(qssToolBar);
-    setFixedWidth(48);
+    setFixedWidth(40);
     setFixedHeight(((QWidget*)parent())->geometry().height());
 
     //header
     header = new QLabel(this);
-    header->setFixedSize(48,12);
+    header->setFixedSize(40,12);
     header->setStyleSheet(qssHeader);
     qDebug() << "controlToolbar.height:" << size().height();
     addWidget(header);

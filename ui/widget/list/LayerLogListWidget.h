@@ -11,7 +11,7 @@ class LayerLogListWidget : public QListWidget
 private:
     LayerLogListItemData * layerLogListItemData = nullptr;
     int layerLogListItemSize = 0;
-    QString qss = "{border: 1px solid rgba(255, 255, 255, 0.5);background-color:#464646;}";
+    QString qss = "QListWidget{background-color:#464646;border-bottom:1px solid #262626;} QListWidget::Item{background-color:#262626;}";
 public:
     explicit LayerLogListWidget(QWidget *parent = nullptr);
     explicit LayerLogListWidget(LayerLogListItemData * datas, int size, QWidget *parent = nullptr);

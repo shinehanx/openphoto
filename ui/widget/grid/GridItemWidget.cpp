@@ -13,7 +13,7 @@ GridItemWidget::GridItemWidget(QString _icon, QSize _iconSize, QWidget *parent) 
 
 void GridItemWidget::setup()
 {
-    setStyleSheet(qss);
+    //setStyleSheet(qss);
     QRect rect = geometry();
     int x = (rect.width() - iconSize.width()) / 2;
     int y = (rect.height() - iconSize.height()) / 2;
@@ -21,5 +21,6 @@ void GridItemWidget::setup()
     int h = iconSize.height();
 
     imageView = new ImageView(this);
+    imageView->setStyleSheet(qssImageView);
     imageView->show(x, y , w, h, icon);
 }
