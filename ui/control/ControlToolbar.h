@@ -19,7 +19,7 @@ private:
     //toolbar qss
     const QString qssToolBar = "QToolBar { background-color:#525252;\
               spacing: 0px;\
-              margin-top:2px;\
+              margin-top:5px;\
               border: 2px solid #525252;\
               padding: 2px solid #585858;} \
             QToolButton { width:32px;\

@@ -31,7 +31,7 @@ void ControlToolbar::setup()
         if (toolButtonDatas[i].name == "changeFrontBackWidget") {
             //填充和描边工具
             changeFrontBackWidget = new ChangeFrontBackColorWidget(this);
-            changeFrontBackWidget->setFixedSize(44,60);
+            changeFrontBackWidget->setFixedSize(38,54);
             changeFrontBackWidget->setup();
             addWidget(changeFrontBackWidget);
         } else if (toolButtonDatas[i].name != "-") {

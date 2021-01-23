@@ -21,7 +21,7 @@ void RightFrameSplitter::setup()
     insertWidget(1, centerPanel);
 
     rightPanel = new RightPanel(this);
-    rightPanel->setFixedWidth(240);
+    rightPanel->setFixedWidth(250);
     rightPanel->setFixedHeight(parentSize.height() - 65);
     rightPanel->setup();
     insertWidget(1, rightPanel);

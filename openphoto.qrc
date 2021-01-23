@@ -33,14 +33,14 @@
         <file>rc/images/toolbar/layerpanel/lock-position.png</file>
         <file>rc/images/toolbar/layerpanel/eye.png</file>
         <file>rc/images/toolbar/layerpanel/pic.png</file>
-        <file>rc/images/ctrlbar/brush.png</file>
-        <file>rc/images/ctrlbar/EllipseSel.png</file>
-        <file>rc/images/ctrlbar/grid.png</file>
-        <file>rc/images/ctrlbar/lariat.png</file>
-        <file>rc/images/ctrlbar/painting.png</file>
-        <file>rc/images/ctrlbar/pipette.png</file>
-        <file>rc/images/ctrlbar/crop.png</file>
-        <file>rc/images/ctrlbar/rubber.png</file>
         <file>rc/images/ctrlbar/stamp.png</file>
+        <file>rc/images/ctrlbar/rubber.png</file>
+        <file>rc/images/ctrlbar/pipette.png</file>
+        <file>rc/images/ctrlbar/painting.png</file>
+        <file>rc/images/ctrlbar/lariat.png</file>
+        <file>rc/images/ctrlbar/grid.png</file>
+        <file>rc/images/ctrlbar/EllipseSel.png</file>
+        <file>rc/images/ctrlbar/crop.png</file>
+        <file>rc/images/ctrlbar/brush.png</file>
     </qresource>
 </RCC>
