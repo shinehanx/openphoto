@@ -5,6 +5,7 @@
 #include <QSplitter>
 #include <QLabel>
 #include "ui/panel/RightPanel.h"
+#include "ui/tab/MainPhotoTab.h"
 
 class RightFrameSplitter : public QSplitter
 {
@@ -20,7 +21,7 @@ public:
     explicit RightFrameSplitter(QWidget *parent = nullptr);
     void setup();
 
-    QLabel * centerPanel = nullptr;
+    MainPhotoTab * centerPanel = nullptr;
     RightPanel * rightPanel = nullptr;
 signals:
 

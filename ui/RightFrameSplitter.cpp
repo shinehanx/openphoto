@@ -15,9 +15,10 @@ void RightFrameSplitter::setup()
     QSize parentSize = ((QWidget *)parent())->geometry().size();
     setStyleSheet(qssSplit);
 
-    centerPanel = new QLabel(this);
+    centerPanel = new MainPhotoTab(this);
     centerPanel->setFixedWidth(parentSize.width() - 200 - 100);
-    centerPanel->setText("centerPanel");
+    centerPanel->setFixedHeight(parentSize.height() - 65);
+    centerPanel->setup();
     insertWidget(1, centerPanel);
 
     rightPanel = new RightPanel(this);

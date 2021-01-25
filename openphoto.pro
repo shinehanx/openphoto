@@ -27,6 +27,7 @@ SOURCES += \
     ui/tab/AdjustStyleTab.cpp \
     ui/tab/ColorPlansTab.cpp \
     ui/tab/LayerChanelPathTab.cpp \
+    ui/tab/MainPhotoTab.cpp \
     ui/widget/ChangeFrontBackColorWidget.cpp \
     ui/widget/ChromatogramWidget.cpp \
     ui/widget/ColorChanelWidget.cpp \
@@ -63,6 +64,7 @@ HEADERS += \
     ui/tab/AdjustStyleTab.h \
     ui/tab/ColorPlansTab.h \
     ui/tab/LayerChanelPathTab.h \
+    ui/tab/MainPhotoTab.h \
     ui/widget/ChangeFrontBackColorWidget.h \
     ui/widget/ChromatogramWidget.h \
     ui/widget/ColorChanelWidget.h \
