@@ -2,6 +2,8 @@
 #include <QPushButton>
 #include <QToolButton>
 #include <QLabel>
+#include <QDebug>
+#include "ui/widget/ImageView.h"
 MainMenuToolbar::MainMenuToolbar(QWidget *parent) : QToolBar(tr("菜单栏"),parent)
 {
 
@@ -9,11 +11,18 @@ MainMenuToolbar::MainMenuToolbar(QWidget *parent) : QToolBar(tr("菜单栏"),par
 
 void MainMenuToolbar::setup()
 {
-    setOrientation(Qt::Horizontal); //垂直摆放
-    setStyleSheet(qssToolBar);
-    setFixedHeight(22);
-    setMovable(false);
-    setFixedHeight(((QWidget*)parent())->geometry().width());
+    this->setStyleSheet(qssToolBar);
+    this->setOrientation(Qt::Horizontal);
+    this->setMovable(false);
+    if (toolButtonDatas == nullptr) {
+        return ;
+    }
+    setFixedHeight(28);
+    setFixedWidth(((QWidget*)parent())->geometry().width());
+
+    ImageView * horizontalSplit = new ImageView(this);
+    horizontalSplit->show(QSize(20,20), ":/rc/images/toolbar/op.png");
+    addWidget(horizontalSplit);
 
     for (int i=0; i < MAINMENU_TOOLBUTTON_NUMS; i++) {
         if (toolButtonDatas[i].name == "changeFrontBackWidget") {
@@ -21,17 +30,27 @@ void MainMenuToolbar::setup()
         } else if (toolButtonDatas[i].name != "-") {
             //按钮
             QAction * act = new QAction(this);
-            QToolButton * btn = new QToolButton(this);
-            act->setText(tr("编辑(E)"));
-            //act->setData(toolButtonDatas[i].name);
+            act->setText(toolButtonDatas[i].tip);
+            act->setData(toolButtonDatas[i].name);
             addAction(act);
-            btn->setIcon(QIcon(toolButtonDatas[i].icon));
-            addWidget(btn);
-            //connect(act, SIGNAL(triggered(bool)), this, SLOT(onTrigger(bool)));
-            //toolButtons.append(act);
         }else {
             //分隔栏
             addSeparator();
         }
     }
 }
+
+/**
+ * @brief ControlToolbar::onTrigger
+ * 点击按钮
+ * @param checked 是否选中
+ */
+void MainMenuToolbar::onTrigger(bool checked)
+{
+    Q_UNUSED(checked);
+    QAction * act = (QAction *)sender();
+    qDebug()<< "onTrigger, sender:" <<  act->data().toString();
+
+    emit triggerDrawToolButton(act->data().toString());
+}
+

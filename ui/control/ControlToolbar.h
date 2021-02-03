@@ -60,12 +60,7 @@ private:
         {"ToolButton","changeFrontBackWidget","-",tr("填充和描边")}
     };
 
-
-
     QVector<QAction *> toolButtons ;
-
-
-
 public:
     explicit ControlToolbar(QWidget *parent = nullptr);
     //初始化UI

@@ -7,6 +7,8 @@
 #include <QSplitter>
 #include <QLabel>
 #include "ui/MainFrameSplitter.h"
+#include "ui/menu/MainMenuToolbar.h"
+#include "ui/widget/ImageView.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -22,6 +24,8 @@ public:
 
 private:
     Ui::MainWindow *ui;
+
+    MainMenuToolbar * mainMenuToolbar = nullptr;
 
     //文件菜单
     QAction *newAct = nullptr;
@@ -43,6 +47,7 @@ private:
     QToolBar *selectToolbar = nullptr;
 
 
+
     QAction * moveAct = nullptr;
     QToolButton *moveBtn = nullptr;
 
@@ -55,7 +60,7 @@ private:
     void createSplitters();
 
     QString qssToolBar = "QToolBar { background-color:#525252;} \
-            QToolBar {margin-top:1px;padding-top:2px; border-top: 2px solid #666666;border-bottom: 1px solid #666666;} \
+            QToolBar {border-top: 1px solid #666666;border-bottom: 1px solid #666666;} \
             QToolButton { background-color: transparent; border: 1px;}";
 
 

@@ -31,8 +31,6 @@ void MainWindow::createActions()
     newAct = new QAction(tr("新建"),this);
     newAct->setShortcut(tr("Ctrl+N"));
 
-
-
     moveBtn = new QToolButton(this);
     moveBtn->setIconSize(QSize(48,48));
     moveBtn->setIcon(QIcon(":/rc/images/toolbar/move.png"));
@@ -41,21 +39,27 @@ void MainWindow::createActions()
 
 void MainWindow::createMenus()
 {
-    fileMenu = menuBar()->addMenu(tr("文件"));
-    fileMenu->addAction(newAct);
+    menuBar()->close();
+    mainMenuToolbar = new MainMenuToolbar(this);
+    mainMenuToolbar->setGeometry(0,0, geometry().width(), 28);
+    mainMenuToolbar->setup();
+
 }
 
 void MainWindow::createToolbars()
 {
-    selectToolbar = new QToolBar(tr("移动"),this);
-    selectToolbar->setFixedHeight(52);
-
+    selectToolbar = new QToolBar(tr("主工具栏"),this);
+    selectToolbar->setGeometry(0, 28, geometry().width(), 32);
+    selectToolbar->setMovable(false);
     selectToolbar->setStyleSheet(qssToolBar);
     selectToolbar->addAction(moveAct);
-    selectToolbar->addSeparator();
+
+    ImageView * horizontalSplit = new ImageView(this);
+    horizontalSplit->show(QSize(5,26), ":/rc/images/toolbar/horizontal.png");
+    selectToolbar->addWidget(horizontalSplit);
     selectToolbar->addWidget(moveBtn);
 
-    addToolBar(selectToolbar);
+    //addToolBar(selectToolbar);
 }
 
 void MainWindow::createSplitters()
@@ -63,6 +67,6 @@ void MainWindow::createSplitters()
     mainSplitter = new MainFrameSplitter(this);
     qDebug() << "MainWindow::size()::width:" << size().width() << ",height:" << size().height();
     qDebug() << "MainWindow::geometry()::width:" << geometry().width() << ",height:" << geometry().height();
-    mainSplitter->setGeometry(0, 75, geometry().width(), geometry().height());
+    mainSplitter->setGeometry(0, 60, geometry().width(), geometry().height());
     mainSplitter->setup();
 }

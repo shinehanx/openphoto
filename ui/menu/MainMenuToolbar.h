@@ -9,18 +9,22 @@ class MainMenuToolbar : public QToolBar
     Q_OBJECT
 private:
     //toolbar qss
-    const QString qssToolBar = "QToolBar {background-color:red;\
-              spacing: 0px;\
+    const QString qssToolBar = "QToolBar {background-color:#535353;\
+              spacing: 5px;\
               border-bottom:1px solid #383838;\
               padding: 0px solid #585858;} \
             QToolButton { width:50px;\
+              margin-left:5px;\
+              color:white;\
               height:18px;\
               background-color: transparent; \
               border: 0px; }\
             QToolButton:hover{\
-              border:2px solid #262827;\
-              border-radius: 3px;\
-              background-color:#3e3e3e;\
+              margin-left:5px;\
+              color:white;\
+              border:1px solid #262827;\
+              border-radius: 2px;\
+              background-color:#666666;\
             }";
 
     //工具栏的按钮和元素
@@ -37,10 +41,18 @@ private:
         {"ToolButton","Window",":/rc/images/ctrlbar/EllipseSel.png",tr("窗口(W)")},
         {"ToolButton","Help",":/rc/images/ctrlbar/EllipseSel.png",tr("帮助(H)")}
     };
+
+     QVector<QAction *> toolButtons ;
 public:
     explicit MainMenuToolbar(QWidget *parent = nullptr);
     void setup();
 signals:
+    //点击工具栏按钮：信号
+    void triggerDrawToolButton(QString);
+
+public slots:
+    //点击工具栏按钮：槽
+    void onTrigger(bool);
 
 };
 
