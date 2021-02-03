@@ -22,14 +22,10 @@ void MainFrameSplitter::setup()
     setHandleWidth(4);////分离条目的宽度,注意qssSplit定义的宽度会影响显示效果
     setStyleSheet(qssSplit);
 
-    //ctrlBarHeaderSplit = new QLabel(this);
-    //ctrlBarHeaderSplit->setFixedSize(72,2);
-    //ctrlBarHeaderSplit->setStyleSheet("background-color:#262827;border:0px;margin-top:0px");
-
-    controlToolbar = new ControlToolbar(this);
-    controlToolbar->setup();
+    controlBar = new ControlBar(this);
+    controlBar->setup();
     //放置到第0位置，即是左边的工具栏
-    insertWidget(0, controlToolbar);
+    insertWidget(0, controlBar);
 
     rightFrame = new RightFrameSplitter(this);
     rightFrame->setup();

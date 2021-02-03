@@ -11,16 +11,19 @@ private:
     //toolbar qss
     const QString qssToolBar = "QToolBar {background-color:#525252;\
               spacing: 0px;\
-              border: 0px solid #525252;\
+              border-bottom: 1px solid #262828;\
               padding: 0px solid #585858;} \
             QToolButton { width:50px;\
+              margin-left:3px;\
               height:18px;\
               background-color: transparent; \
+              color:#ffffff;\
               border: 0px; }\
             QToolButton:hover{\
-              border:2px solid #262827;\
-              border-radius: 3px;\
-              background-color:#3e3e3e;\
+              border:1px solid #262827;\
+              border-radius: 2px;\
+              color:#ffffff;\
+              background-color:#686868;\
             }";
 
     //工具栏的按钮和元素

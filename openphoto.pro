@@ -22,6 +22,7 @@ SOURCES += \
     openphoto.cpp \
     ui/MainFrameSplitter.cpp \
     ui/RightFrameSplitter.cpp \
+    ui/control/ControlBar.cpp \
     ui/control/ControlToolbar.cpp \
     ui/menu/MainMenuToolbar.cpp \
     ui/panel/RightPanel.cpp \
@@ -60,6 +61,7 @@ HEADERS += \
     model/UiModel.h \
     ui/MainFrameSplitter.h \
     ui/RightFrameSplitter.h \
+    ui/control/ControlBar.h \
     ui/control/ControlToolbar.h \
     ui/menu/MainMenuToolbar.h \
     ui/panel/RightPanel.h \

@@ -4,7 +4,7 @@
 #include <QWidget>
 #include <QSplitter>
 #include <QLabel>
-#include "ui/control/ControlToolbar.h"
+#include "ui/control/ControlBar.h"
 #include "ui/RightFrameSplitter.h"
 
 class MainFrameSplitter : public QSplitter
@@ -20,11 +20,9 @@ private:
             width: 2px;}";
 
     //左边：控制工具栏
-    ControlToolbar * controlToolbar = nullptr;
+    ControlBar * controlBar = nullptr;
     //右边：分离框架
     RightFrameSplitter * rightFrame = nullptr;
-
-    QLabel * ctrlBarHeaderSplit = nullptr;
 
     QLabel * centerPanel = nullptr;
     QLabel * rightPanel = nullptr;
