@@ -18,7 +18,7 @@ void ControlToolbar::setup()
 
     //分隔栏
     ImageView * verticalSplit = new ImageView(this);
-    verticalSplit->show(QSize(31,5), ":/rc/images/toolbar/vertical.png");
+    verticalSplit->show(QSize(32,5), ":/rc/images/toolbar/vertical.png");
     addWidget(verticalSplit);
 
     for (int i=0; i < DRAW_TOOLBUTTON_NUMS; i++) {

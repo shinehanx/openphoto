@@ -10,6 +10,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    setWindowFlags(Qt::FramelessWindowHint);
     QRect rect = QApplication::desktop()->availableGeometry(-1);
     int iTitleBarHeight = style()->pixelMetric(QStyle::PM_TitleBarHeight);  // 获取标题栏高度
     rect.setHeight(rect.height() - iTitleBarHeight);
