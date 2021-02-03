@@ -7,6 +7,7 @@
 #include <QSplitter>
 #include <QLabel>
 #include "ui/MainFrameSplitter.h"
+#include "ui/menu/MainMenuToolbar.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -41,7 +42,7 @@ private:
 
     QMenu *fileMenu = nullptr;
     QToolBar *selectToolbar = nullptr;
-
+    MainMenuToolbar * menuToolbar;
 
     QAction * moveAct = nullptr;
     QToolButton *moveBtn = nullptr;

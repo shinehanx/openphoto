@@ -23,6 +23,7 @@ SOURCES += \
     ui/MainFrameSplitter.cpp \
     ui/RightFrameSplitter.cpp \
     ui/control/ControlToolbar.cpp \
+    ui/menu/MainMenuToolbar.cpp \
     ui/panel/RightPanel.cpp \
     ui/tab/AdjustStyleTab.cpp \
     ui/tab/ColorPlansTab.cpp \
@@ -60,6 +61,7 @@ HEADERS += \
     ui/MainFrameSplitter.h \
     ui/RightFrameSplitter.h \
     ui/control/ControlToolbar.h \
+    ui/menu/MainMenuToolbar.h \
     ui/panel/RightPanel.h \
     ui/tab/AdjustStyleTab.h \
     ui/tab/ColorPlansTab.h \
