@@ -2,6 +2,8 @@
 #include "ui_MainWindow.h"
 #include <QDebug>
 #include <QDesktopWidget>
+#include <QMenuBar>
+#include "ui/menu/MainMenuToolbar.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -13,6 +15,7 @@ MainWindow::MainWindow(QWidget *parent)
     rect.setHeight(rect.height() - iTitleBarHeight);
     this->setGeometry(rect);
     this->setStyleSheet("background-color:#262827;");
+
 
     createActions();
     createMenus();
@@ -43,14 +46,15 @@ void MainWindow::createMenus()
     mainMenuToolbar = new MainMenuToolbar(this);
     mainMenuToolbar->setGeometry(0,0, geometry().width(), 28);
     mainMenuToolbar->setup();
-
 }
 
 void MainWindow::createToolbars()
 {
+
     selectToolbar = new QToolBar(tr("主工具栏"),this);
     selectToolbar->setGeometry(0, 28, geometry().width(), 32);
     selectToolbar->setMovable(false);
+
     selectToolbar->setStyleSheet(qssToolBar);
     selectToolbar->addAction(moveAct);
 
@@ -59,7 +63,6 @@ void MainWindow::createToolbars()
     selectToolbar->addWidget(horizontalSplit);
     selectToolbar->addWidget(moveBtn);
 
-    //addToolBar(selectToolbar);
 }
 
 void MainWindow::createSplitters()
@@ -68,5 +71,6 @@ void MainWindow::createSplitters()
     qDebug() << "MainWindow::size()::width:" << size().width() << ",height:" << size().height();
     qDebug() << "MainWindow::geometry()::width:" << geometry().width() << ",height:" << geometry().height();
     mainSplitter->setGeometry(0, 60, geometry().width(), geometry().height());
+
     mainSplitter->setup();
 }

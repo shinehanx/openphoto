@@ -45,7 +45,7 @@ private:
 
     QMenu *fileMenu = nullptr;
     QToolBar *selectToolbar = nullptr;
-
+    MainMenuToolbar * menuToolbar;
 
 
     QAction * moveAct = nullptr;
