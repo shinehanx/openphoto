@@ -1,7 +1,7 @@
 #include "ControlToolbar.h"
 
 #include <QDebug>
-
+#include "ui/widget/ImageView.h"
 ControlToolbar::ControlToolbar(QWidget *parent) : QToolBar(tr("控制栏"),parent)
 {
 
@@ -15,12 +15,11 @@ void ControlToolbar::setup()
 {
     setOrientation(Qt::Vertical); //垂直摆放
     setStyleSheet(qssToolBar);
-    //setFixedWidth(40);
-    //setFixedHeight(((QWidget*)parent())->geometry().height());
-
 
     //分隔栏
-    addSeparator();
+    ImageView * verticalSplit = new ImageView(this);
+    verticalSplit->show(QSize(31,5), ":/rc/images/toolbar/vertical.png");
+    addWidget(verticalSplit);
 
     for (int i=0; i < DRAW_TOOLBUTTON_NUMS; i++) {
         if (toolButtonDatas[i].name == "changeFrontBackWidget") {

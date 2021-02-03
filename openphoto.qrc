@@ -44,5 +44,6 @@
         <file>rc/images/ctrlbar/brush.png</file>
         <file>rc/images/toolbar/horizontal.png</file>
         <file>rc/images/toolbar/op.png</file>
+        <file>rc/images/toolbar/vertical.png</file>
     </qresource>
 </RCC>

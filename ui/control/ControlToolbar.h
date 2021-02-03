@@ -18,9 +18,9 @@ class ControlToolbar : public QToolBar
 private:
     //toolbar qss
     const QString qssToolBar = "QToolBar { background-color:#525252;\
-              spacing: 0px;\
+              spacing: 3px;\
               border-top:0px solid #6a6a6a;} \
-            QToolButton { width:32px;\
+            QToolButton { margin-top:5px;width:32px;\
               height:24px;\
               background-color: transparent; \
               border: 0px; }\
