@@ -45,5 +45,6 @@
         <file>rc/images/toolbar/horizontal.png</file>
         <file>rc/images/toolbar/op.png</file>
         <file>rc/images/toolbar/vertical.png</file>
+        <file>rc/db/OpenPhotoSys.db</file>
     </qresource>
 </RCC>

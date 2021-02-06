@@ -16,6 +16,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    core/system/common/BaseSysRepository.cpp \
+    core/system/common/SysIdRepository.cpp \
     main.cpp \
     MainWindow.cpp \
     model/UiModel.cpp \
@@ -58,6 +60,8 @@ SOURCES += \
 
 HEADERS += \
     MainWindow.h \
+    core/system/common/BaseSysRepository.h \
+    core/system/common/SysIdRepository.h \
     model/UiModel.h \
     ui/MainFrameSplitter.h \
     ui/RightFrameSplitter.h \
