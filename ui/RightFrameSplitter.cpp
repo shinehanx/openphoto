@@ -1,5 +1,5 @@
 #include "RightFrameSplitter.h"
-
+#include <QDebug>
 RightFrameSplitter::RightFrameSplitter(QWidget *parent) : QSplitter(Qt::Horizontal, parent)
 {
 
@@ -16,13 +16,14 @@ void RightFrameSplitter::setup()
 
     centerPanel = new MainPhotoTab(this);
     centerPanel->setFixedWidth(parentSize.width() - 200 - 100);
-    centerPanel->setFixedHeight(parentSize.height() - 65);
+    centerPanel->setFixedHeight(parentSize.height() - 30);
     centerPanel->setup();
     insertWidget(1, centerPanel);
 
     rightPanel = new RightPanel(this);
     rightPanel->setFixedWidth(250);
-    rightPanel->setFixedHeight(parentSize.height() - 65);
+    rightPanel->setFixedHeight(parentSize.height() - 30);
+    qDebug() << "RightFrameSplitter.parent.height:" << parentSize.height() << ",RightFrameSplitter.parent.height:" << rightPanel->height();
     rightPanel->setup();
     insertWidget(1, rightPanel);
 }
