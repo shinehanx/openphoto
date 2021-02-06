@@ -25,12 +25,13 @@ void RightPanel::setup()
     header->setGeometry(x, y , w, h);
     header->setStyleSheet(qssHeader);
 
-    qDebug() << "RightPanel::size():" << size() << ",parent.size():" << ((QWidget *)parent())->size();
+
     colorPlansTab = new ColorPlansTab(this);
     y = y + RIGHTPANEL_HEADER_H + 1;
     h = RIGHTPANEL_COLORPLANSTAB_H;
     colorPlansTab->setGeometry(x, y, w, h);
     colorPlansTab->setup();
+
 
     adjustStyleTab = new AdjustStyleTab(this);
     y = y + RIGHTPANEL_COLORPLANSTAB_H + RIGHTPANEL_TAB_MARGIN_T;
@@ -38,9 +39,15 @@ void RightPanel::setup()
     adjustStyleTab->setGeometry(x, y, w, h);
     adjustStyleTab->setup();
 
+
     layerChanelPathTab = new LayerChanelPathTab(this);
     y = y + RIGHTPANEL_ADJUSTSTYLETAB_H + RIGHTPANEL_TAB_MARGIN_T;
     h = size().height() - y;
     layerChanelPathTab->setGeometry(x, y, w, h);
     layerChanelPathTab->setup();
+
+    qDebug() << "RightPanel::size():" << size() << ",parent.size():" << ((QWidget *)parent())->size();
+    qDebug() << "RightPanel.colorPlansTab::size():" << colorPlansTab->size();
+    qDebug() << "RightPanel.adjustStyleTab::size():" << adjustStyleTab->size();
+    qDebug() << "RightPanel.layerChanelPathTab::size():" << layerChanelPathTab->size();
 }
