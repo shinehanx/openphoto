@@ -1,7 +1,7 @@
 #include "MainWindow.h"
 #include "ui_MainWindow.h"
 #include <QDebug>
-#include <QDesktopWidget>
+#include <QScreen>
 #include <QMenuBar>
 #include "ui/menu/MainMenuToolbar.h"
 
@@ -11,7 +11,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     setWindowFlags(Qt::FramelessWindowHint);
-    QRect rect = QApplication::desktop()->availableGeometry(-1);
+    QRect rect = QGuiApplication::primaryScreen()->availableGeometry();
     int iTitleBarHeight = style()->pixelMetric(QStyle::PM_TitleBarHeight);  // 获取标题栏高度
     rect.setHeight(rect.height() - iTitleBarHeight);
     this->setGeometry(rect);
